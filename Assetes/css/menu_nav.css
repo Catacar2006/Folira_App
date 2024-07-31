@@ -1,0 +1,143 @@
+
+/*  MENU LATERAL IZQUI8ERDO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(243, 242, 242);
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+.side-bar{
+    background: #503B31;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6 ease;
+    transition-property: left;
+}
+
+header img{
+    width: 180px;
+    margin: 25px;
+    margin-left: 33px;
+    border-radius: 50%;
+}
+
+header h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: -5px; /* Ajuste del margin-top del nombre de usuario */
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.menu .item{
+   position: relative; 
+   cursor: pointer;
+   size: 10%;
+
+}
+
+/* Ajuste de iconos y texto */
+.menu .items a {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px; /* Ajuste del padding para mayor separación vertical */
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.menu .items a img {
+    width: 30px; /* Tamaño de los iconos */
+    height: 30px; /* Asegura que los iconos sean cuadrados */
+    margin-right: 10px; /* Separación entre el icono y el texto */
+    margin-left: 10px; /* Espacio a la izquierda de los iconos */
+}
+
+.menu .items a:hover {
+    background-color: #8a716b; /* Cambia el color de fondo cuando el cursor esté sobre el ítem */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* NAV */
+
+
+
+*.navbar {
+    background: #fff;
+    height: 60px; /* Reduce the height */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin-top: 15px;
+    display: block;
+    position: fixed;
+    align-items: center;
+    width: 82%;
+    margin-left: 300px;
+    margin-bottom: 15px;
+    
+
+}
+
+.navbar-brand {
+    flex-grow: 1;
+}
+
+.navbar-brand .app-logo {
+    height: 50px;  /* Ajusta la altura del logo según tus necesidades */
+    width: auto;
+}
+
+.app-logo{
+    width: 35px;
+    margin-top: 2px
+    
+}
+
+.nav-item img {
+    width: 30px;  /* Ajusta el tamaño del icono según tus necesidades */
+    height: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav.justify-content-center {
+    flex-grow: 100;
+    margin-left: 60px;
+}
+
+.navbar-nav.ms-auto {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

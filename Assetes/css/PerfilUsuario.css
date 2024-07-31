@@ -1,0 +1,18 @@
+
+main {
+    background-color: #fff;
+    margin-top: 115px;
+    max-height: 80%;
+    width: 81.6%;
+    max-width: 95%;
+    margin-left: 14.5%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 0.5px solid #50505e;
+}
+.banner-usuario{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    width: 1725px;
+}
