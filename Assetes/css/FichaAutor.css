@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+/* Estilos para el contenedor principal */
+main {
+    background-color: #fff;
+    margin-top: 115px;
+    max-height: 80%;
+    width: 75%;
+    max-width: 95%;
+    margin-left: 16%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 0.5px solid #22223B;
+    padding: 20px; /* Añade padding si necesitas separar el contenido de los bordes */
+}
+
+
+/* Estilo para el contenedor .container */
+.container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    width: 100%;
+}
+
+/* Estilo para la sección de información del autor */
+.Info-autor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-autor img {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    margin-left: -22%;
+    margin-top: 60px;
+    border: 1px solid #22223B;
+}
+
+/* Estilo para .detalles-autor */
+.detalles-autor {
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+    color: black;
+    font-size: 30px; /* Tamaño de fuente mayor */
+    margin-top: 90px;
+}
+
+/* Estilo para los párrafos dentro de .detalles-autor */
+.detalles-autor p {
+    margin: 0; /* Ajusta el margen si es necesario */
+    padding: 0; /* Ajusta el padding si es necesario */
+    line-height: 1.2; /* Ajusta la altura de línea si es necesario */
+}
+
+/* Estilo para el contenedor .descripcion-autor */
+.descripcion-autor {
+    color: black;
+    font-size: 20px;
+    width: 115%; /* Usa el ancho completo del contenedor principal */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    padding: 0 15px; /* Agrega padding para evitar que el texto toque los bordes */
+    margin-left: -100px;
+}
+
+/* Espacio debajo del título en .descripcion-autor */
+.descripcion-autor h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: 'Berkshire Swash'; /* Aplica la fuente importada */
+    
+}
+
+/* Estilo para los párrafos dentro de .descripcion-autor */
+.descripcion-autor p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Ajusta según tu diseño */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    font-size: 25.5px;
+}
+
+/* Contenedor para los botones */
+.gustos-container {
+    display: flex; /* Usa Flexbox para alinear los botones en línea */
+    gap: 40px; /* Espacio de 20px entre los botones */
+    margin-top: 40px; /* Espacio encima del contenedor de los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-left: 1300px;
+}
+
+
+/* Estilos para los botones */
+.gustos button {
+    background: none; /* Elimina el fondo del botón para que solo se vea la imagen */
+    border: 2px solid #22223B; /* Añade un borde de 2px de grosor y color negro al botón */
+    border-radius: 30px; /* Borde redondeado para los botones */
+    padding: 0; /* Elimina el padding del botón */
+    margin: 0; /* Elimina el margen del botón */
+    display: flex; /* Usa Flexbox para alinear la imagen en el centro */
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 65px; /* Ancho del botón */
+    height: 65px; /* Alto del botón */
+    margin-top: 30px;
+}
+
+
+/* Estilos para las imágenes dentro de los botones */
+.gustos button img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Alto de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque, eliminando el espacio adicional debajo */
+    
+}
+
+button:hover {
+    background-color: #4a4e6a; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+.recognized-books h2{
+    font-family: 'Berkshire Swash'; /* Aplica la fuente importada */
+    font-size: 50px;
+}
+
+
+/* Ajusta la sección de libros reconocidos */
+.recognized-books {
+    background-color: #c5c2c022;
+   
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 95%; /* Asegura que no exceda el ancho máximo */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    padding: 20px; /* Espacio alrededor del contenido */
+    border-radius: 10px;
+    color: #22223B;
+    border: 1px solid #22223B;
+    margin-top: 60px;
+}
+
+
+/* Ajusta el contenedor de los libros */
+.books {
+    display: flex;
+    justify-content: space-between; /* Alinea los libros con espacio entre ellos */
+    gap: 40px;/* Espacio de 30px entre los libros */
+   margin-top: 40px;
+   
+}
+
+/* Estilo para cada libro */
+.book {
+    text-align: center; 
+    /* position:fixed; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    border-radius: 30px;
+  
+}
+
+/* Estilo para las imágenes de los libros */
+.book img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 10px; /* Centra la imagen y agrega un margen abajo */
+    border-radius: 20px;
+    margin-left: -10px;
+    border: 1px solid #50505e;
+}
+
+/* Estilo para el texto debajo de las imágenes */
+.book p {
+    margin: 0;
+    color: #22223B;
+    font-size: 22px;
+    width: 200px; /* Asegura que el ancho del texto coincida con el ancho de la imagen */
+    text-align: center; /* Centra el texto */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    word-wrap: break-word; /* Permite que el texto se rompa si es necesario */
+    font-weight: 500 ; /* Aplica negrita al texto */
+}
+
+

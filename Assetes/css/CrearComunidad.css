@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 1272px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 894px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+}
+.title{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+.form-container h2 {
+    font-size: 28px;
+    color: #503B31;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+.form-container h1 {
+    font-size: 76px;
+    color: #22223B;;
+    margin-bottom: -14px;
+}
+.form-container {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.title {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3rem;
+    color: #503B31;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #503B31;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 37px;
+}
+
+.input-icon {
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-icon input,select {
+   text-align: center;
+}
+.input-icon img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 15px 10px 45px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #503B31;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #503B31;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5a463c;
+}
+
+.image-container {
+    flex: 1;
+    background-image: url('assets/img/Login.png');
+    background-size: cover;
+    background-position: center;
+}

@@ -13,6 +13,7 @@ body{
     color: rgb(255, 255, 255);
     background-size: cover;
     background-position: center;
+
 }
 
 .side-bar{
@@ -114,14 +115,19 @@ header h2 {
     
 }
 
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    gap: 15px; /* Espacio entre los íconos */
+    padding-left: 147vh; /* Elimina cualquier sangría predeterminada en la lista */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    transform: translateY(-35px); /* Mueve los íconos 10px hacia arriba */
+}
+
 .nav-item img {
     width: 30px;  /* Ajusta el tamaño del icono según tus necesidades */
     height: 30px; /* Ajusta el tamaño del icono según tus necesidades */
-}
-
-.navbar-nav {
-    display: flex;
-    align-items: center;
 }
 
 .navbar-nav.justify-content-center {

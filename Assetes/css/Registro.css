@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+     
+}
+.subTitle{
+    font-family: "Poppins", sans-serif;
+        
+}
+.title{
+        font-family: "Berkshire Swash", serif;
+        font-weight: 1000;
+        font-style: normal;
+      
+}
+.register-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.register-form, .register-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.register-form h1 {
+    font-size: 76px;
+    color: #22223B;;
+    margin-bottom: -14px;
+}
+
+.register-form h2 {
+    font-size: 28px;
+    color: #503B31;
+    margin-bottom: 40px;
+}
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 330px;
+}
+
+.input-icon img {
+    position: absolute;
+    left: 10px;
+    width: 20px; /* Ajustar el tamaño del icono */
+    height: 20px;
+}
+
+
+.input-icon input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Espacio a la izquierda para el icono */
+    border: 1px solid #ccc;
+    border-radius: 55px;
+}
+
+button {
+    width: 230px;
+    padding: 10px;
+    background-color: #503B31;;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    height: 37px;
+    margin-top: 16px;
+    font-size: 17px;
+}
+
+.social-register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-register p {
+    margin-bottom: 10px;
+    color: #503B31;
+}
+
+.social-icons a {
+    margin: 14px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 35px;
+    margin-top: 27px;
+}
+
+.register-image {
+    background: url('assets/img/img\ Registro.jpg') center/cover no-repeat;
+}
+.divider {
+    width: 75%;
+    border-top: 3px solid #503B31;;
+    margin-block: 40px 0;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+    
+    .register-form, .register-image {
+        flex-basis: 100%;
+    }
+    
+    .register-image {
+        height: 50vh;
+    }
+    
+    .register-form h1 {
+        font-size: 24px;
+    }
+    
+    .register-form h2 {
+        font-size: 18px;
+    }
+    
+    .input-group input {
+        padding: 8px;
+    }
+    
+    button {
+        padding: 8px;
+    }
+    
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}

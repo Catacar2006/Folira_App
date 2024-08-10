@@ -2,15 +2,17 @@
 
 
 main {
-    background-color: #fff;
-    margin-top: 115px;
-    max-height: 80%;
-    width: 81.6%;
-    max-width: 95%;
-    margin-left: 16%; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 0.5px solid #50505e;
+        background-color: #fff;
+        margin-top: 115px;
+        max-height: 80%;
+        width: 75%;
+        height: 1182px;
+        max-width: 95%;
+        margin-left: 16%; 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 0.5px solid #22223B;
+        padding: 20px; /* Añade padding si necesitas separar el contenido de los bordes */
 }
 
 
@@ -33,8 +35,6 @@ main {
     bottom: 10px;;
     
 }
-
-
 
 
 /* autores */
