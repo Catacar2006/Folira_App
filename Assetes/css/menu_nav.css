@@ -72,6 +72,7 @@ header h2 {
     height: 30px; /* Asegura que los iconos sean cuadrados */
     margin-right: 10px; /* Separación entre el icono y el texto */
     margin-left: 10px; /* Espacio a la izquierda de los iconos */
+    
 }
 
 .menu .items a:hover {
@@ -117,12 +118,7 @@ header h2 {
 
 .navbar-nav {
     display: flex;
-    flex-direction: row; /* Alinea los elementos en una fila horizontal */
-    gap: 15px; /* Espacio entre los íconos */
-    padding-left: 147vh; /* Elimina cualquier sangría predeterminada en la lista */
-    margin: 0; /* Elimina cualquier margen predeterminado */
-    list-style-type: none; /* Elimina los puntos de la lista */
-    transform: translateY(-35px); /* Mueve los íconos 10px hacia arriba */
+    align-items: center;
 }
 
 .nav-item img {
@@ -144,6 +140,55 @@ header h2 {
     align-items: center;
     justify-content: center;
 }
+
+
+
+/* Estilos para el botón de búsqueda */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Alinea la búsqueda a la izquierda */
+    color: black;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px ;
+    font-size: 14px;
+    outline: none;
+    flex: 1; /* Asegura que el input ocupe espacio disponible */
+    height: 35px;
+    margin-right: 10px;
+    
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-left: none;
+    border: none !important; /* Asegúrate de que no haya borde */
+    background-color: #ffffff;
+}
+
+
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 
 
 

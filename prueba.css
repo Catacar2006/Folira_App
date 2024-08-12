@@ -1,0 +1,506 @@
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+/*Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #dddddd;
+}
+
+.container {
+    display: flex;
+    transition: margin-left 0.3s;
+}
+
+/* menu lateral */
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 90px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.sidebar{
+    position: fixed;
+    width: 256px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #503B31;
+    padding: 24px;
+    transition: all 0.3s;
+    left: 0.0vh;
+}
+
+/* foto y nombre */
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-img {
+    width: 90%; /* Ajusta según el tamaño que desees cuando el menú está cerrado */
+    height: 80%; /* Ajusta según el tamaño que desees cuando el menú está cerrado */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    margin-bottom: 8px; /* Espacio entre la imagen y el nombre */
+    transition: width 0.3s, height 0.3s; /* Suaviza la transición del tamaño */
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+}
+
+.user-details .name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+/* menu del menu lateral */
+.nav{
+    flex: 1;
+    margin-top: 70px;
+}
+
+.menu ul li{
+    position: relative;
+    list-style: none;
+    /* margin-bottom: 5px; */
+    
+}
+
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-left: -22px;
+    width: 200px;
+    /* margin-left: 85px; */
+}
+
+/* Estilo de los elementos del menú cuando están activos */
+.menu ul li.active > a {
+    color: #000;
+    width: 40px;
+    background-color: #7d564c7e; /* Cambia el color de fondo para el estado activo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Estilo de la sombra para el estado activo */
+}
+
+/* Estilo de los elementos del menú cuando se pasa el cursor (hover) */
+.menu ul li > a:hover {
+    background-color: #ffffff4d; 
+    transition: background-color 0.3s; 
+}
+
+.menu ul li.icon{
+    font-size: 20px;
+}
+
+.menu ul li .arrow{
+    font-size: 14px;
+    transform: all 0.3s;
+}
+
+.menu ul li.active .arrow  {
+    transform: rotate(180deg);
+}
+
+
+
+.menu-btn{
+    position: absolute;
+    right: -14px;
+    top: 3.5%;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #8a716b;
+    border: 2px solid #f6f6f6;
+    background-color: #fff;
+}
+
+.menu-btn:hover i{
+    color: #8a716b;
+}
+
+
+.menu-btn i{
+    transition: all0.3s;
+}
+
+.sidebar.active .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar.active .user-img {
+    width: 100%; /* Tamaño deseado cuando el menú está cerrado */
+    height: 100%; /* Tamaño deseado cuando el menú está cerrado */
+    /* border-radius: 50%;
+    overflow: hidden; */
+    
+}
+
+.sidebar.active .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    
+}
+
+
+.sidebar.active{
+    width: 120px; 
+    /* padding: 14px 14px 14px; */
+    
+}
+
+/* .sidebar.active img{
+    margin-top: 24px;
+    width: 120%;
+    height: 120%;
+    padding: 0%;
+    border-radius: 50%; 
+} */
+
+
+.sidebar.active .menu > ul > li > a .text{
+   position: absolute;
+   left: 70px;
+   top: 50%;
+   transform: translateY(-50%);
+   padding: 8px 12px;
+   border-radius: 4px;
+   color: #503B31;
+   background-color: #ffffff;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s;
+   font-size: 15px;
+}
+
+.sidebar.active .user-details .name {
+    font-size: 5px; /* Reduce el tamaño de la fuente del nombre */
+    visibility: hidden; /* Oculta el nombre cuando la barra lateral está contraída */
+}
+
+.sidebar.active .head {
+    align-items: center; /* Centra la imagen en el espacio reducido */
+}
+
+.sidebar.active .menu > ul > li > a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    margin-left: -10px;
+}
+
+.sidebar.active .menu > ul > li > a .text::after{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 20%;
+    width: 10px;
+    height: 19px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.sidebar.active .menu > ul > li > a:hover .text{
+    left: 65px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar.active .menu .sub-menu{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #f6f6f6;
+    background-color: #fff;
+    box-shadow: 0px  10px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* nav */
+
+
+.navbar {
+    background: #ffffff;
+    height: 60px; /* Reduce the height */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    margin-top: 15px;
+    position: relative;
+    align-items: center;
+    width: calc(105% - 286px) ; 
+    margin-left: calc(166px + 1rem);
+
+    transition: margin-left 0.3s, width 0.3s;
+    
+
+}
+
+/* Cuando el menú está cerrado */
+.sidebar.active ~ .navbar {
+    width: calc(100% - 120px) !important; /* Ajusta el ancho para el menú cerrado */
+    margin-left: -75px; /* Ajusta el margen izquierdo para el menú cerrado */
+}
+
+/* Estado cuando el menú está abierto */
+
+
+.container.collapsed {
+    margin-left: 90px; /* Ajusta según el ancho del menú lateral cuando está cerrado */
+}
+
+.navbar-brand {
+    flex-grow: 1;
+}
+
+.navbar-brand .app-logo {
+    height: 50px;  /* Ajusta la altura del logo según tus necesidades */
+    width: auto;
+}
+
+.app-logo{
+    width: 35px;
+    margin-top: 2px
+    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 125vh;
+    gap: 15px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-item img {
+    width: 30px; 
+    height: 30px;
+    margin-top: 0;
+    transition: width 0.3s, height 0.3s; 
+   
+}
+
+.offcanvas-body .nav-item .nav-icon{
+    margin-top: 10px;
+    margin-top: 20vh;
+    
+}
+
+.navbar-nav.justify-content-center {
+    flex-grow: 100;
+    margin-left: 60px;
+}
+
+.navbar-nav.ms-auto {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* No espacio entre el input y el botón */
+    transition: width 0.3s; 
+}
+
+/* Estilos para el input de búsqueda */
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px ; /* Bordes redondeados solo en la izquierda */
+    font-size: 14px;
+    outline: none;
+    height: 35px;
+    margin-left: -40%;
+    width: 200px; /* Ajusta el ancho del input según tus necesidades */
+}
+
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none ;
+    border-radius: 0 25px 25px 0; /* Bordes redondeados solo en la derecha */
+    background-color: transparent; /* Fondo blanco para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    height: 45px;
+    width: 50px;
+    transition: width 0.3s; 
+}
+
+/* Estilos para el ícono de la lupa */
+ .search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar.active ~ .navbar .search-container {
+    width: calc(180% - 120px); 
+}
+
+.sidebar.active ~ .navbar .search-button {
+    width: calc(50px * 1.5); 
+}
+
+
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar.active {
+        width: 80px;
+    }
+
+    .navbar {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar.active ~ .navbar {
+        width: calc(100% - 80px);
+    }
+
+    .user-img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .user-details .name {
+        font-size: 16px;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .search-button {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+
+    .search-button {
+        width: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .app-logo {
+        width: 30px;
+    }
+
+    .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .search-input {
+        width: 80px;
+    }
+
+    .search-button {
+        width: 30px;
+    }
+}
