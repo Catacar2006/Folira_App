@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+main {
+    background-color: #fff;
+    margin-top: 50px;
+    max-height: 80%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-left: 16%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 0.5px solid #22223B;
+    transition: margin-left 0.3s ease;
+    padding: 0 0 30px 0; 
+}
+
+
+/* Cuando el menú lateral está abierto */
+.sidebar.active ~ main.shifted {
+    margin-left: 250px; 
+}
+
+
+/* Estilos para la sección de reseñas izquierda*/
+.review-section-izquierda {
+    width: 50%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px ;
+    margin-left: 10px;
+    margin-top: 20px ;
+    
+}
+
+/* Cuadro que encierra la reseña */
+.review-box {
+    padding: 20px ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos dentro de la reseña */
+.review-item {
+    margin-bottom: 15px;
+}
+
+.review-label {
+    font-weight: bold;
+    color: #503B31;
+    margin-right: 10px;
+}
+
+.review-value {
+    color: #333;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------- */
+
+/* Estilos para la sección de reseñas derecha */
+.review-section-derecha {
+    width: 50%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px;
+    margin-top: -39vh ;
+    margin-left: 550px ;
+    margin-bottom: -20px;
+    
+}
+
+/* Cuadro que encierra la reseña */
+.review-box-derecha {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Estilos para los elementos dentro de la reseña */
+.review-item-derecha {
+    margin-bottom: 15px;
+}
+
+.review-label-derecha {
+    font-weight: bold;
+    color: #503B31;
+    margin-right: 10px;
+}
+
+.review-value-derecha {
+    color: #333;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Estilo para la reseña */
+.review-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* podria servir para que cuando pasen el curso se muestre toda la reseña */
+
+/* .review-value, .review-value-derecha {
+    color: #333;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} */
+
+/* .review-value::after, .review-value-derecha::after {
+    content: attr(data-fulltext);  */
+    /* Muestra el texto completo al pasar el cursor */
+    /* display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    max-width: 300px;  */
+    /* Ajusta el ancho máximo del tooltip si es necesario */
+/* } */
+
+/* .review-value:hover::after, .review-value-derecha:hover::after {
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* Estilo para el tooltip */
+/* .tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+} */
+/* Mostrar el tooltip al pasar el cursor por encima */
+/* .review-value:hover + .tooltip {
+    display: block;
+} */

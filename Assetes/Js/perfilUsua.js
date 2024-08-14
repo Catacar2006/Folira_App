@@ -8,5 +8,3 @@ document.addEventListener('DOMContentLoaded', function () {
         container.classList.toggle('collapsed', !sidebar.classList.contains('active'));
     });
 });
-
-
