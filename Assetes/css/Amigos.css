@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 main {
-        background-color: #fff;
-        margin-top: 115px;
-        max-height: 80%;
-        width: 75%;
-        height: 1182px;
-        max-width: 95%;
-        margin-left: 16%; 
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border: 0.5px solid #22223B;
-        padding: 20px; /* Añade padding si necesitas separar el contenido de los bordes */
+    background-color: #fff;
+    margin-top: 115px;
+    max-height: 80%;
+    width: 75%;
+    height: 1182px;
+    max-width: 95%;
+    margin-left: 16%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 0.5px solid #22223B;
+    padding: 20px; /* Añade padding si necesitas separar el contenido de los bordes */
 }
 
 
@@ -20,44 +21,23 @@ main {
     padding: 30px;
     color: #22223B;
     margin-left: 20px;
-    font-family: "Berkshire";
-    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
     
 }
 
-.text-section-amigo{
+.text-section-amigo {
     color: #000000;
-    margin-left: 60px;
-    font-size: 20px;
-    font-weight: 500;
+    margin-left: 20px;
+    font-size: 25px;
+    /* font-weight: 500; */
     margin-top: 20px;
-    /* margin-left: 80px; */
     bottom: 10px;;
     
 }
 
 
-/* autores */
-
-button{
-    
-    position: relative;
-    left: 1390px;
-    width: 95px;
-    height: 35px;
-    border: 2px solid #22223B;
-    border-radius: 60px;
-    background-color: transparent;
-    position: relative;
-    bottom: 30px;
-   
-}
-
-button b{
-    font-family: "Berkshire";
-    font-size: 18px;
-    color: #22223B;
-}
 
 
 .img-amigo {
@@ -96,4 +76,17 @@ button b{
     align-items: center;
     justify-content: center;
     text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.title-amigo-section {
+    color: black;
+    margin-top: 50px; 
+    margin-left: -600px;
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    width: 100%; /* Ajusta el ancho para que coincida con el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Asegura que el texto esté centrado */
+    
 }
