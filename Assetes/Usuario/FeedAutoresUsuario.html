@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assetes/css/usua.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assetes/css/FeedAutores.css">
-    <link rel="stylesheet" href="Assetes/css/menu_nav.css">
+    <link rel="stylesheet" href="/Assetes/css/FeedAutores.css">
+    <link rel="stylesheet" href="/Assetes/css/menu_nav.css">
     <title>Feed Autores</title>
 </head>
-<body>
+<body> 
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <img src="Assetes/img/FOLIRA.png" alt="" class="app-logo">
@@ -76,75 +76,199 @@
       </div>
    </div>
 
-   <main>
-
+   <main> 
+ 
     <div>
         <h1 class="title-section-book">Escritores que te hacen feliz</h1>
-        <p class="text-section-book">¡Explora el fascinante mundo de los autores y descubre nuevas voces que te cautivarán con sus historias! Sumérgete en un universo de <br>
-            personajes inolvidables y tramas emocionantes mientras exploras el talento de escritores de diversos géneros y estilos. ¡Encuentra tu <br>
-            próxima obsesión literaria y déjate llevar por la magia de la escritura!
+        <p class="text-section-book">
+          ¡Explora el fascinante mundo de los autores y descubre nuevas voces que te cautivarán 
+          con sus historias! Sumérgete en un universo de personajes inolvidables y tramas 
+          emocionantes mientras exploras el talento de escritores de diversos géneros y estilos. 
+          ¡Encuentra tu próxima obsesión literaria y déjate llevar por la magia de la escritura!
         </p>
       </div>
 
       <div>
-        <h2 class="title-section-book">Latino Americanos</h2>
+        <h2 class="title-book">Latino Americanos</h2>
       </div>
 
+      <a href="#modal-autores" class="ver-mas">ver más</a>
+
+      <!-- Modal -->
+      <div id="modal-autores" class="modal-overlay-autores">
+          <div class="modal-content-autores">
+              <a href="#" class="close-autores">&times;</a>
+              <h2>LATINO AMERICANOS</h2>
+              <div class="modal-autores-container">
+                    <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Gabriel García Márquez.jpg" alt="Gabriel García Márquez">
+                      <a href="perfil-gabriel-garcia-marquez.html" class="modal-title-autores">Gabriel García Márquez</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/burgos_julia.jpg" alt="Burgos Julia">
+                      <a href="perfil-burgos-julia.html" class="modal-title-autores">Burgos Julia</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Las frases de Mario Benedetti.jpg" alt="Mario Benedetti">
+                      <a href="perfil-mario-benedetti.html" class="modal-title-autores">Mario Benedetti</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Mario Vargas Llosa.jpeg" alt="Mario Vargas Llosa">
+                      <a href="perfil-mario-vargas-llosa.html" class="modal-title-autores">Mario Vargas Llosa</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Laura-Restrepo.jpeg" alt="Laura Restrepo">
+                      <a href="perfil-laura-restrepo.html" class="modal-title-autores">Laura Restrepo</a>
+                  </div>
+                    <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Gabriel García Márquez.jpg" alt="Gabriel García Márquez">
+                      <a href="perfil-gabriel-garcia-marquez.html" class="modal-title-autores">Gabriel García Márquez</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/burgos_julia.jpg" alt="Burgos Julia">
+                      <a href="perfil-burgos-julia.html" class="modal-title-autores">Burgos Julia</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Las frases de Mario Benedetti.jpg" alt="Mario Benedetti">
+                      <a href="perfil-mario-benedetti.html" class="modal-title-autores">Mario Benedetti</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Mario Vargas Llosa.jpeg" alt="Mario Vargas Llosa">
+                      <a href="perfil-mario-vargas-llosa.html" class="modal-title-autores">Mario Vargas Llosa</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Laura-Restrepo.jpeg" alt="Laura Restrepo">
+                      <a href="perfil-laura-restrepo.html" class="modal-title-autores">Laura Restrepo</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- otro contendio -->
       <div class="container-autores">
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Gabriel García Márquez.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/Gabriel García Márquez.jpg" alt="">
           <h5 class="title-autor">Gabriel García Márquez</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/burgos_julia.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/burgos_julia.jpg" alt="">
           <h5 class="title-autor">Burgos Julia</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Las frases de Mario Benedetti.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/Las frases de Mario Benedetti.jpg" alt="">
           <h5 class="title-autor">Mario Benedetti</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Mario Vargas Llosa.jpeg" alt="">
+          <img class="img-autor" src="/Assetes/img/Mario Vargas Llosa.jpeg" alt="">
           <h5 class="title-autor">Mario Vargas Llosa</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Laura-Restrepo.jpeg" alt="">
+          <img class="img-autor" src="/Assetes/img/Laura-Restrepo.jpeg" alt="">
           <h5 class="title-autor">Luara Restrepo</h5>
         </div>
        </div>
 
+       <!-- autores medievales -->
        <div>
-        <h2 class="title-section-book">Medieval y Renacimiento</h2>
+        <h2 class="title-book">Medieval y Renacimiento</h2>
+      </div>
+
+      <a href="#modal-autor" class="ver-mas">ver más</a>
+
+      <!-- Modal -->
+      <div id="modal-autor" class="modal-overlay-autor">
+          <div class="modal-content-autor">
+              <a href="#" class="close-autor">&times;</a>
+              <h2>MEDIEVAL Y RENACIMIENTO</h2>
+              <div class="modal-autor-container">
+                    <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Shakespeare.jpg" alt="William Shakespeare">
+                      <a href="perfil-william-shakespeare.html" class="modal-title-autores">William Shakespeare</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/(Dante Alighieri).jpg" alt="Dante Alighieri">
+                      <a href="perfil-dante-alighieri.html" class="modal-title-autores">Dante Alighieri</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Sophocles.jpg" alt="Socrates">
+                      <a href="perfil-socrates.html" class="modal-title-autores">Socrates</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Miguel de Cervantes Saavedra.jpeg" alt="Miguel de Cervantes">
+                      <a href="perfil-miguel-de-cervantes.html" class="modal-title-autores">Miguel de Cervantes</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Luis de Góngora.jpg" alt="Luis de Góngora">
+                      <a href="perfil-luis-de-gongora.html" class="modal-title-autores">Luis de Góngora</a>
+                  </div>
+                    <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Shakespeare.jpg" alt="William Shakespeare">
+                      <a href="perfil-william-shakespeare.html" class="modal-title-autores">William Shakespeare</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/(Dante Alighieri).jpg" alt="Dante Alighieri">
+                      <a href="perfil-dante-alighieri.html" class="modal-title-autores">Dante Alighieri</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Sophocles.jpg" alt="Socrates">
+                      <a href="perfil-socrates.html" class="modal-title-autores">Socrates</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Miguel de Cervantes Saavedra.jpeg" alt="Miguel de Cervantes">
+                      <a href="perfil-miguel-de-cervantes.html" class="modal-title-autores">Miguel de Cervantes</a>
+                  </div>
+                  
+                  <div class="modal-autor-item">
+                      <img class="modal-img-autores" src="/Assetes/img/Luis de Góngora.jpg" alt="Luis de Góngora">
+                      <a href="perfil-luis-de-gongora.html" class="modal-title-autores">Luis de Góngora</a>
+                  </div>
+              </div>
+          </div>
       </div>
 
       <div class="container-autores">
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Shakespeare.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/Shakespeare.jpg" alt="">
           <h5 class="title-autor">William Shakespeare</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/(Dante Alighieri).jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/(Dante Alighieri).jpg" alt="">
           <h5 class="title-autor">Dante Alighieri</h5>
         </div>
 
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Sophocles.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/Sophocles.jpg" alt="">
           <h5 class="title-autor">Socrates</h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Miguel de Cervantes Saavedra.jpeg" alt="">
+          <img class="img-autor" src="/Assetes/img/Miguel de Cervantes Saavedra.jpeg" alt="">
           <h5 class="title-autor">Miguel de Cervantes </h5>
         </div>
   
         <div class="autor">
-          <img class="img-autor" src="Assetes/img/Luis de Góngora.jpg" alt="">
+          <img class="img-autor" src="/Assetes/img/Luis de Góngora.jpg" alt="">
           <h5 class="title-autor">Luis de Góngora</h5>
         </div>
        </div>
