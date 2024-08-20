@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 main {
     background-color: #fff;
@@ -9,252 +10,212 @@ main {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border: 0.5px solid #22223B;
-    padding: 20px; /* Añade padding si necesitas separar el contenido de los bordes */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .book-container {
     padding: 20px;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del contenedor */
+    width: 100%; 
+    box-sizing: border-box; /
 }
 
 .infor-libro {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una línea */
+    flex-wrap: wrap; 
     margin-bottom: 20px;
-    line-height: 1.8; /* Ajusta según tu diseño */
+    line-height: 1.8; 
     font-size: 23px;
-    margin-left: 0; /* Ajusta según tus necesidades */
+    margin-left: 0; 
 }
 
 .book-cover img {
-    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 450px; /* Limita el ancho máximo */
+    width: 100%;
+    height: auto;
+    max-width: 450px;
     border-radius: 20px;
-    border: 0.1px solid #22223B;
+    border: 0.1px solid #503b31;
     margin-right: 20px;
 }
 
 .book-details {
-    flex: 1; /* Permite que el contenedor de detalles ocupe el espacio restante */
+    flex: 1; 
     margin-left: 40px;
 }
 
 .book-details p {
     margin: 10px 0;
     color: black;
-    text-align: justify; /* Justifica el texto para un mejor flujo */
+    text-align: justify; 
 }
 
 .book-details p strong {
-    font-weight: 600; /* Aplica negrita al texto */
-    color: #22223B;
+    font-weight: 600; 
+    color: #503b31;
     font-size: 25px;
     line-height: 2;
 }
 
 .container-sinopsis {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del contenedor */
-    margin-top: 20px; /* Añade espacio superior para separar de otros contenidos */
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 20px; 
 }
 
 .sinopsis-libro {
-    /* padding: 10px 20px; Añade espacio alrededor del texto dentro del contenedor */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
-    font-size: 22px; /* Ajusta el tamaño del texto si es necesario */
-    color: black; /* Mantén el color del texto consistente */
+    line-height: 1.6; 
+    font-size: 22px; 
+    color: black; 
 }
 
-/* .sinopsis-libro p {
-     margin: 10px 0; Añade margen entre los párrafos 
-    text-align: justify; /* Justifica el texto para un mejor flujo 
-} */
-
-.sinopsis-libro p strong {
-    color: #22223B; /* Asegura que el texto en negrita tenga el color adecuado */
-    display: block; /* Hace que el texto en negrita esté en una línea separada */
-    /* margin-bottom: 10px; Añade espacio debajo del texto en negrita */
+.parrafo{
+    width: 95%;
 }
 
 /* selecto biblioteca */
 .book-locations {
-    margin-bottom: 20px; /* Espacio inferior */
-    color: black; /* Color del texto */
+    margin-bottom: 20px; 
+    color: #503b31; 
 }
 
 .book-locations p {
-    font-size: 22px; /* Tamaño del texto */
-    margin-bottom: 10px; /* Espacio debajo del párrafo */
-    margin-top: -30px;
-    margin-left: 20px;
+    font-size: 25px; 
+   margin: -160px 30px 30px 30px;
 }
 
 .locations-list {
-    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
-    flex-direction: column; /* Alinea los ítems en columnas */
-    gap: 10px; /* Espacio entre las filas de elementos */
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .location-item {
-    display: flex; /* Usa flexbox para alinear texto e imagen en línea */
-    align-items: center; /* Alinea verticalmente el texto con la imagen */
+    display: flex; 
+    align-items: center; 
 }
 
 .location-item p {
-    margin: 0; /* Elimina el margen del párrafo */
-    margin-right: 10px; /* Espacio a la derecha del texto */
-    font-size: 18px; /* Tamaño de la fuente para las categorías */
+    margin: 0; 
+    margin-right: 10px; 
+    font-size: 23px; 
     margin-left: 25px;
     
    
 }
 
 .location-item img {
-    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 20px; 
+    height: auto; 
 }
 
 /* Gustos */
 .gustos-container {
-    display: flex; /* Usa Flexbox para alinear los botones en línea */
-    gap: 40px; /* Espacio de 20px entre los botones */
-    margin-top: 40px; /* Espacio encima del contenedor de los botones */
-    justify-content: center; /* Centra los botones horizontalmente */
-    margin-left: 1500px;
+    display: flex;
+    gap: 40px; 
+    margin: 30px 0 30px 1100px; 
+    justify-content: center; 
+    
 
 }
 
 /* Estilos para los botones */
 .gustos button {
-    background: none; /* Elimina el fondo del botón para que solo se vea la imagen */
-    border: 2px solid #22223B; /* Añade un borde de 2px de grosor y color negro al botón */
-    border-radius: 30px; /* Borde redondeado para los botones */
-    padding: 0; /* Elimina el padding del botón */
-    margin: 0; /* Elimina el margen del botón */
-    display: flex; /* Usa Flexbox para alinear la imagen en el centro */
-    align-items: center; /* Centra la imagen verticalmente */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    width: 65px; /* Ancho del botón */
-    height: 65px; /* Alto del botón */
+    background: none; 
+    border: 2px solid #503b31; 
+    border-radius: 30px; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 65px; 
+    height: 65px; 
     margin-top: 30px;
 }
 
 /* Estilos para las imágenes dentro de los botones */
 .gustos button img {
-    width: 40px; /* Ancho de la imagen */
-    height: 40px; /* Alto de la imagen */
-    display: block; /* Asegura que la imagen se comporte como un bloque, eliminando el espacio adicional debajo */
-    
-    
+    width: 40px; 
+    height: 40px; 
+    display: block; 
 }
 
 /* cuadros de escritura */
-
 .book-reviews {
-    margin-top: 20px;
-   
+    display: flex;
+    align-items: center; /* Alinea verticalmente el área de texto y el botón */
+    justify-content: space-between; /* Alinea el área de texto a la izquierda y el botón a la derecha */
+    gap: 10px; /* Espacio entre el área de texto y el botón */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    margin-bottom: 10px; /* Espacio entre los inputs y las reseñas */
 }
 
-.book-reviews h2 {
-    margin-bottom: 10px;
+.area-text {
+    width: calc(100% - 150px); /* Deja espacio suficiente para el botón */
+    height: 60px;
+    margin: 50px 0; 
+    padding: 12px 0 10px 20px; 
+    border-radius: 10px;
+    border: 2px solid #503b31; 
+    flex-grow: 1;
+    font-size: 20px;
 }
 
-.book-reviews textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #22223B;
-}
-
-.book-reviews button {
-    padding: 10px 20px;
-    background-color: #22223B;
-    color: white;
-    border: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.book-reviews button:hover {
-    background-color: #22223B;
-} 
-
-/* comentarios */
-
-.book-reviews {
-    margin: 20px; /* Espacio alrededor del contenedor de reseñas */
-    color: black; /* Color del texto */
-}
-
-.book-reviews h2 {
-    font-size: 24px; /* Tamaño del título de reseñas */
-    margin-bottom: 15px; /* Espacio debajo del título */
-}
-
-textarea {
-    width: 100%; /* Ancho completo para el área de texto */
-    height: 100px; /* Ajusta la altura según sea necesario */
-    margin-bottom: 10px; /* Espacio debajo del área de texto */
-    padding: 10px; /* Espacio interno */
-    border-radius: 80px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde gris claro */
-    margin-top: 15px;
-}
-
-
-
+/* boton de enviar */
 button {
-    padding: 10px 20px; /* Espacio interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #22223b; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    margin-left: 1570px;
+    padding: 12px 20px; /* Añadido padding a la derecha */
+    border: 2px solid #503b31; 
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    font-size: 22px;
+    color: #503b31; 
+    cursor: pointer; 
+    margin: 0; /* Elimina el margen que desalineaba el botón */
+    flex-shrink: 0;
 }
 
 button:hover {
-    background-color: #4a4e6a; /* Color de fondo al pasar el mouse sobre el botón */
+    background-color: #503b311a;
 }
 
+/* reseñas */
 .review {
     background-color: #F9F9F9;
     padding: 15px;
     border-radius: 30px;
     margin-bottom: 10px;
-    border: 1px solid black;
-    margin-top: 40px;
+    border: 1px solid #503b31;
+    max-width: 100%;
+    
 }
 
 .review p {
-    margin: 5px 0; /* Espacio vertical entre párrafos dentro de la reseña */
-    color: black; /* Color del texto */
+    margin: 5px 0; 
+    color: black;
     font-size: 21px;
     margin-top: 15px;
     margin-left: 15px;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis;
 }
 
 .rating-container {
-    display: flex; /* Utiliza flexbox para alinear el texto y las estrellas en línea */
-    align-items: center; /* Alinea verticalmente el texto con las estrellas */
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
     
 }
 
 .rating {
-    display: flex; /* Utiliza flexbox para alinear las estrellas en línea */
-    gap: 2px; /* Espacio entre las estrellas */
+    display: flex; 
+    gap: 2px; 
     margin-right: 15px;
 }
 
 .rating img {
-    width: 20px; /* Ajusta el tamaño de las estrellas según sea necesario */
-    height: auto; /* Mantiene la proporción de las estrellas */
+    width: 20px; 
+    height: auto; 
 }
 
 
