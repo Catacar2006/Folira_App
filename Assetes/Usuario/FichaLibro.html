@@ -140,33 +140,34 @@
       </div>
     </div>
 
-    <main>
-      <div class="book-container">
-        <div class="infor-libro">
-          <div class="book-cover">
-            <img
+    <main class="main-ficha-libro">
+      <div class="libro-container">
+        <div class="infor-ficha-libro">
+          <div class="libro-ficha-cover"> 
+            <img 
+              class="img-ficha-libro"
               src="/Assetes/img/Trilogía Fuego 1_ Ciudades De Humo.jpg"
               alt="Ciudad de humo"
             />
           </div>
 
-          <div class="book-details">
-            <p>
+          <div class="ficha-libro-details">
+            <p class="text-details-ficha-libro">
               <strong style="color: #503B31">Nombre:</strong> Ciudades de humo
             </p>
 
-            <p><strong style="color: #503B31">Autor:</strong> Joana Marcús</p>
+            <p class="text-details-ficha-libro"><strong style="color: #503B31">Autor:</strong> Joana Marcús</p>
 
-            <p>
+            <p class="text-details-ficha-libro">
               <strong style="color: #503B31">Categoría:</strong> Fantasía,
               Romance, Aventura y Drama
             </p>
 
-            <div class="container-sinopsis">
-              <section class="sinopsis-libro">
+            <div class="container-sinopsis-ficha-libro">
+              <section class="sinopsis-libro-ficha">
                 <p><strong style="color: #503B31">Sinopsis:</strong></p>
 
-                <p class="parrafo">
+                <p class="parrafo-ficha-libro">
                   Alice nunca ha salido al mundo. Su cena es a las nueve en
                   punto, su sueño dura exactamente ocho horas, jamás tiene una
                   sola arruga en la ropa, parpadea 86400 veces al día, respira
@@ -175,7 +176,7 @@
                   qué pasaría si todo cambiara.
                 </p>
 
-                <p class="parrafo">
+                <p class="parrafo-ficha-libro">
                   Pero, ¿y si eso ocurriera? En un mundo donde la libertad está
                   controlada, ¿Hasta dónde serías capaz de llegar para
                   recuperarla? ¿Hasta dónde serías capaz de llegar para
@@ -184,59 +185,169 @@
               </section>
             </div>
 
-            <p><strong style="color: #503B31">Serie:</strong> Trilogía Fuego</p>
+            <p class="text-details-ficha-libro"><strong style="color: #503B31">Serie:</strong> Trilogía Fuego</p>
 
-            <p>
+            <p class="text-details-ficha-libro">
               <strong style="color: #503B31">ISBN:</strong> 978-84-08-25185-9
             </p>
 
             <p>
               <strong style="color: #503B31">Calificación:</strong>
-              <span class="rating">
-                <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                <img src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+              <span class="rating-ficha-libro">
+                <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
               </span>
             </p>
           </div>
         </div>
 
-        <div class="book-locations">
-          <p><strong>Lo puedes encontrar en:</strong></p>
-          <div class="locations-list">
-            <div class="location-item">
-              <p>Bibliotecas virtuales</p>
-              <img src="/Assetes/Icons/flechita abajo.png" alt="flechita abajo" />
+        <div class="ficha-libro-locations">
+          <p class="text-location-libro"><strong>Lo puedes encontrar en:</strong></p>
+          <div class="locations-list-ficha-libro">
+
+            <div class="location-item-ficha-libro">
+              <p class="store-ficha-libro">Bibliotecas virtuales</p>
+              <img class="img-flecha-libro" src="/Assetes/Icons/flechita abajo.png" alt="flechita abajo" />
             </div>
-            <div class="location-item">
-              <p>Bibliotecas físicas</p>
-              <img src="/Assetes/Icons/flechita abajo.png" alt="flechita abajo" />
+
+            <div class="location-item-ficha-libro">
+              <p class="store-ficha-libro">Bibliotecas físicas</p>
+              <img  class="img-flecha-libro" src="/Assetes/Icons/flechita abajo.png" alt="flechita abajo" />
             </div>
+
           </div>
         </div>
 
-        <div class="gustos-container">
-          <div class="gustos">
-            <button>
-              <img src="/Assetes/Icons/corazon (1).png" alt="Corazón" />
+        <div class="gustos-container-ficha-libro">
+          <div class="div-gustos">
+            <button class="gustos-boton">
+              <img class="img-boton-gusto" src="/Assetes/Icons/corazon (1).png" alt="Corazón" />
             </button>
           </div>
-          <div class="gustos">
-            <button>
-              <img src="/Assetes/Icons/disgusto.png" alt="Disgusto" />
+          <div class="div-gustos">
+            <button class="gustos-boton">
+              <img class="img-boton-gusto" src="/Assetes/Icons/disgusto.png" alt="Disgusto" />
+            </button>
+          </div>
+          <div class="div-agregar-libro">
+            <button class="agregar-boton">
+              <img class="img-boton-agregar" src="/Assetes/Icons/añadir.png" alt="Disgusto" />
             </button>
           </div>
         </div>
 
-        <div class="book-reviews">
+        <div class="book-reviews-ficha-libro">
            
-            <textarea class="area-text" placeholder="Escribe tu reseña aquí.."></textarea>
-            <button>Enviar</button>
-            <div class="review">
-                <p><strong>Art15_:</strong></p>
-                <p>
+            <textarea class="area-text-ficha-libro" placeholder="Escribe tu reseña aquí.."></textarea>
+            <button class="boton-enviar-ficha">Enviar</button>
+   
+            <!-- ver mas reseñas -->
+
+            <button class="ver-mas">Ver más</button>
+
+            <div id="Modal-agregar-libro" class="modal-ficha-libro">
+                <div class="modal-content-ficha-libro">
+                    <span class="modal-close-ficha-libro">&times;</span>
+                    <div class="modal-review-ficha-libro">
+                        <p class="modal-name-usuario-ficha"><strong>Art15_:</strong></p>
+                        <p class="modal-reseña-ficha-librousu">
+                            "Ciudades de humo" de Joana Marcús me ha dejado sin palabras.
+                            Desde la primera página, quedé atrapado en este mundo fascinante y
+                            lleno de misterio. Los personajes están tan bien desarrollados que
+                            es fácil conectar con ellos. La trama está llena de giros
+                            inesperados y emoción constante, lo que hace que no puedas soltar
+                            el libro. Si te gustan las historias con mucha intriga y aventura,
+                            ¡te lo recomiendo totalmente!
+                        </p>
+                        <p class="modal-rating-container-ficha-libro">
+                            <span class="modal-rating">
+                                <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                                <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                                <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                                <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                                <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-review-ficha-libro">
+                      <p class="modal-name-usuario-ficha"><strong>Art15_:</strong></p>
+                      <p class="modal-reseña-ficha-librousu">
+                          "Ciudades de humo" de Joana Marcús me ha dejado sin palabras.
+                          Desde la primera página, quedé atrapado en este mundo fascinante y
+                          lleno de misterio. Los personajes están tan bien desarrollados que
+                          es fácil conectar con ellos. La trama está llena de giros
+                          inesperados y emoción constante, lo que hace que no puedas soltar
+                          el libro. Si te gustan las historias con mucha intriga y aventura,
+                          ¡te lo recomiendo totalmente!
+                      </p>
+                      <p class="modal-rating-container-ficha-libro">
+                          <span class="modal-rating">
+                              <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                              <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                              <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                              <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                              <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                          </span>
+                      </p>
+                  </div>
+                  <div class="modal-review-ficha-libro">
+                    <p class="modal-name-usuario-ficha"><strong>Art15_:</strong></p>
+                    <p class="modal-reseña-ficha-librousu">
+                        "Ciudades de humo" de Joana Marcús me ha dejado sin palabras.
+                        Desde la primera página, quedé atrapado en este mundo fascinante y
+                        lleno de misterio. Los personajes están tan bien desarrollados que
+                        es fácil conectar con ellos. La trama está llena de giros
+                        inesperados y emoción constante, lo que hace que no puedas soltar
+                        el libro. Si te gustan las historias con mucha intriga y aventura,
+                        ¡te lo recomiendo totalmente!
+                    </p>
+                    <p class="modal-rating-container-ficha-libro">
+                        <span class="modal-rating">
+                            <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                            <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                            <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                            <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                            <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                        </span>
+                    </p>
+                </div>
+                <div class="modal-review-ficha-libro">
+                  <p class="modal-name-usuario-ficha"><strong>Art15_:</strong></p>
+                  <p class="modal-reseña-ficha-librousu">
+                      "Ciudades de humo" de Joana Marcús me ha dejado sin palabras.
+                      Desde la primera página, quedé atrapado en este mundo fascinante y
+                      lleno de misterio. Los personajes están tan bien desarrollados que
+                      es fácil conectar con ellos. La trama está llena de giros
+                      inesperados y emoción constante, lo que hace que no puedas soltar
+                      el libro. Si te gustan las historias con mucha intriga y aventura,
+                      ¡te lo recomiendo totalmente!
+                  </p>
+                  <p class="modal-rating-container-ficha-libro">
+                      <span class="modal-rating">
+                          <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                          <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                          <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                          <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                          <img class="modal-puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                      </span>
+                  </p>
+              </div>
+                    <!-- Agregar más reseñas aquí si es necesario -->
+                </div>
+            </div>
+            
+
+
+
+
+
+
+            <div class="review-ficha-libro">
+                <p class="name-usuario-ficha"><strong>Art15_:</strong></p>
+                <p class="reseña-ficha-librousu">
                     "Ciudades de humo" de Joana Marcús me ha dejado sin palabras.
                     Desde la primera página, quedé atrapado en este mundo fascinante y
                     lleno de misterio. Los personajes están tan bien desarrollados que
@@ -248,17 +359,18 @@
                 <p class="rating-container">
                    
                     <span class="rating">
-                      <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                      <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                      <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                      <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                      <img src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                      <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                      <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                      <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                      <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                      <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
                     </span>
                 </p>
             </div>
-            <div class="review">
-                <p><strong>ottoke_ottoke:</strong></p>
-                <p>
+
+            <div class="review-ficha-libro">
+                <p class="name-usuario-ficha"><strong>ottoke_ottoke:</strong></p>
+                <p class="reseña-ficha-librousu">
                     Desde la primera página hasta la última, la historia te envuelve
                     en un torbellino de emociones y aventuras. Los personajes están
                     magníficamente desarrollados y la trama está llena de giros
@@ -269,11 +381,11 @@
                 <p class="rating-container">
                     
                     <span class="rating">
-                        <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                        <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                        <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                        <img src="/Assetes/Icons/estrella-rellena.png" alt="">
-                        <img src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
+                        <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                        <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                        <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                        <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-rellena.png" alt="">
+                        <img class="puntaje-ficha-libro" src="/Assetes/Icons/estrella-medio-vacia.png" alt="">
                     </span>
                 </p>
             </div>
@@ -282,6 +394,8 @@
       </div>
     </main>
 
+
+    <script src="/Assetes/Js/modalAgregarFichaLibro.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
