@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tirulo{
+    text-align: justify;
+    width: 506px;
+    margin-bottom: 24px;
+    position: relative;
+    bottom: 86px;
+    left: 15px;
+}
+.preferences h1 {
+    font-family: "Berkshire Swash", serif;  
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 64px;
+    color: #22223B;
+    margin-bottom: 5px;
+}
+
+.image-container img {
+    width: 512px;
+    height: 1010px;
+    object-fit: cover;
+}
+
+.preferences {
+    padding: 110px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.category {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.category:hover {
+    background-color: #e6e6e6;
+}
+
+.instruction {
+    margin-top: 50px;
+    color: #888;
+}
+.Enviar{
+    border-radius: 20px;
+    height: 50px;
+    width: 270px;
+    font-size: 25px;
+    background-color: #5e4f3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
