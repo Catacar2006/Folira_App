@@ -11,10 +11,10 @@
     crossorigin="anonymous"
 />
     <link rel="stylesheet" href="/Assetes/css/perfilUsuario.css" />
-    <link rel="stylesheet" href="/prueba.css" />
+    <link rel="stylesheet" href="/Assetes/css/prueba.css" />
     <title>Perfil de usuario normal    </title>
 </head>
-<body>
+<body class="body-perfil-usuario">
         <!-- Barra Lateral -->
 <div class="container">
     <div class="sidebar active">
@@ -157,52 +157,56 @@
 
     <!-- Main Content -->
     <div class="col-md-9 col-lg-10">
-      <main>
+      <main class="main-perfil-usuario">
             <!-- Banner y foto usuario -->
-                <div class="banner-container">
-                <div class="banner">
+                <div class="banner-container-perfil-usuario">
+                <div class="banner-perfil-usuario">
                     <img
                     src="/Assetes/img/banner_usua.jpeg"
                     alt=""
-                    class="banner-image"
+                    class="banner-image-perfil-usuario"
                     />
-                    <div class="foto-usuario">
-                    <img src="/Assetes/img/dp4.jpeg" alt="" class="profile-photo" />
-                    <h4>Moon🌝✨</h4>
-                    <button class="editar-btn">Seguir</button> <!-- Botón Editar -->
+                    <div class="foto-usuario-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/dp4.jpeg" 
+                        alt="" 
+                        class="profile-photo-perfil-usuario" 
+                        />
+                    <h4 class="name-usua-perfil-usuario">Moon🌝✨</h4>
+                    <button class="editar-btn-perfil-usuario">Seguir</button> <!-- Botón Editar -->
                     </div>
                 </div>
                 </div>
 
                 <!-- Sección de Información -->
             <!-- informacion -->
-            <div class="informacion">
-                <div class="item">
-                <span class="label">Correo |</span>
-                <span class="value">moon25@gmail.com</span>
+            <div class="informacion-perfil-usuario">
+                <div class="item-perfil-usuario">
+                    <span class="label-perfil-usuario">Correo |</span>
+                    <span class="value-perfil-usuario">moon25@gmail.com</span>
                 </div>
-                <div class="item">
-                <span class="label">Fecha Nacimiento |</span>
-                <span class="value">13 junio 2013</span>
+                <div class="item-perfil-usuario">
+                    <span class="label-perfil-usuario">Fecha Nacimiento |</span>
+                    <span class="value-perfil-usuario">13 junio 2013</span>
                 </div>
-                <div class="item">
-                <span class="label">Género |</span>
-                <span class="value">Hombre</span>
+                <div class="item-perfil-usuario">
+                    <span class="label-perfil-usuario">Género |</span>
+                    <span class="value-perfil-usuario">Hombre</span>
                 </div>
-                <div class="item">
-                <span class="label">País |</span>
-                <span class="value">Brasil</span>
+                <div class="item-perfil-usuario">
+                    <span class="label-perfil-usuario">País |</span>
+                    <span class="value-perfil-usuario">Brasil</span>
                 </div>
             </div>
 
             <!-- Linea -->
-            <div class="line-container">
-                <div class="line"></div>
+            <div class="line-container-perfil-usuario">
+                <div class="line-perfil-usuario"></div>
             </div>
 
             <!-- Biografia -->
-            <div class="biografia">
-                <p>
+            <div class="biografia-perfil-usuario">
+                <p class="text-biografia-perfil-usuario">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
                 minima nostrum unde ex, magni ipsa asperiores soluta hic earum aut
                 quidem ipsum laudantium dolor nisi accusamus inventore numquam
@@ -212,30 +216,47 @@
 
 
             <!-- generos favoritos -->
-            <div class="generos">
-                <h3>Generos Favoritos</h3>
-                <div class="tipo-generos">
-                <span class="genero">
-                    <img src="/Assetes/Icons/cuchillo.png" alt="Terror" />
+            <div class="generos-perfil-usuario">
+                <h3 class="title-genero-perfil-usuario">Generos Favoritos</h3>
+                <div class="tipo-generos-perfil-usuario">
+                <span class="genero-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/cuchillo.png" 
+                        alt="Terror" 
+                        class="img-genero-perfil-usuario"
+                        />
                     Terror
                 </span>
-                <span class="genero">
+                <span class="genero-perfil-usuario">
                     <img
                     src="/Assetes/Icons/ciencia-ficcion.png"
                     alt="Ciencia Ficción"
+                    class="img-genero-perfil-usuario"
                     />
                     Ciencia Ficción
                 </span>
-                <span class="genero">
-                    <img src="/Assetes/Icons/crecimiento.png" alt="Crecimiento Personal" />
+                <span class="genero-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/crecimiento.png" 
+                        alt="Crecimiento Personal" 
+                        class="img-genero-perfil-usuario"
+                        />
                     Crecimeinto Personal
                 </span>
-                <span class="genero">
-                    <img src="/Assetes/Icons/corazon (2).png" alt="Romance" />
+                <span class="genero-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/corazon (2).png" 
+                        alt="Romance" 
+                        class="img-genero-perfil-usuario"
+                        />
                     Romance
                 </span>
-                <span class="genero">
-                    <img src="/Assetes/Icons/comedia.png" alt="Comedia" />
+                <span class="genero-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/comedia.png" 
+                        alt="Comedia" 
+                        class="img-genero-perfil-usuario"
+                        />
                     Comedia
                 </span>
                 </div>
@@ -243,74 +264,122 @@
 
 
             <!-- Seccion de amigos -->
-            <div class="amigos">
+            <div class="amigos-perfil-usuario">
                 <!-- boton de ver mas -->
-                <div class="boton-ver-mas">
-                <button>Ver Más</button>
+                <div class="div-ver-mas-perfil-usuario">
+                <button class="boton-ver-mas-perfil-usuario">Ver Más</button>
                 </div>
                 
-                <h3>Amigos</h3>
-                <div class="seccion-amigos">
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp7.jpg" alt="Alex_㋛" />
-                    <p>Alex_㋛</p>
+                <h3 class="seccion-title-perfil-usuario">Amigos</h3>
+                <div class="seccion-amigos-perfil-usuario">
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp7.jpg" 
+                        alt="Alex_㋛" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">Alex_㋛</p>
                 </div>
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp8.jpeg" alt="Emma_✩" />
-                    <p>Emma_✩</p>
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp8.jpeg" 
+                        alt="Emma_✩" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">Emma_✩</p>
                 </div>
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp9.jpeg" alt="John_★" />
-                    <p>John_★</p>
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp9.jpeg" 
+                        alt="John_★" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">John_★</p> 
                 </div>
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp7.jpg" alt="Alex_㋛" />
-                    <p>Alex_㋛</p>
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp7.jpg" 
+                        alt="Alex_㋛" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">Alex_㋛</p>
                 </div>
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp8.jpeg" alt="Emma_✩" />
-                    <p>Emma_✩</p>
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp8.jpeg" 
+                        alt="Emma_✩" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">Emma_✩</p>
                 </div>
-                <div class="foto-amigo">
-                    <img src="/Assetes/img/cp9.jpeg" alt="John_★" />
-                    <p>John_★</p>
+                <div class="foto-amigo-perfil-usuario">
+                    <img 
+                        src="/Assetes/img/cp9.jpeg" 
+                        alt="John_★" 
+                        class="img-amigo-perfil-usuario"
+                        />
+                    <p class="name-usuar-perfil-usuario">John_★</p>
                 </div>
                 </div>
             </div>
 
                 <!-- Comunidades -->
 
-                <div class="comunidades">
+                <div class="comunidades-perfil-usuario">
                     <!-- boton de ver mas -->
-                    <div class="boton-ver-mas">
-                    <button>Ver Más</button>
+                    <div class="div-ver-mas-perfil-usuario">
+                    <button class="boton-ver-mas-perfil-usuario">Ver Más</button>
                     </div>
             
-                    <h3>Comunidades</h3>
-                    <div class="seccion-comunidad">
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c2.jpg" alt="Alex_㋛" />
-                        <p>Alex_㋛</p>
+                    <h3 class="seccion-title-perfil-usuario">Comunidades</h3>
+                    <div class="seccion-comunidad-perfil-usuario">
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c2.jpg" 
+                            alt="Alex_㋛" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">Alex_㋛</p>
                     </div>
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c3.jpg" alt="Emma_✩" />
-                        <p>Emma_✩</p>
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c3.jpg" 
+                            alt="Emma_✩" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">Emma_✩</p>
                     </div>
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c4.jpg" alt="John_★" />
-                        <p>John_★</p>
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c4.jpg" 
+                            alt="John_★" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">John_★</p>
                     </div>
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c5.jpg" alt="Alex_㋛" />
-                        <p>Alex_㋛</p>
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c5.jpg" 
+                            alt="Alex_㋛" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">Alex_㋛</p>
                     </div>
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c6.jpg" alt="Emma_✩" />
-                        <p>Emma_✩</p>
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c6.jpg" 
+                            alt="Emma_✩" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">Emma_✩</p>
                     </div>
-                    <div class="foto-comunidad">
-                        <img src="/Assetes/img/c7.jpg" alt="John_★" />
-                        <p>John_★</p>
+                    <div class="foto-comunidad-perfil-usuario">
+                        <img 
+                            src="/Assetes/img/c7.jpg" 
+                            alt="John_★" 
+                            class="img-comunidad-perfil-usuario"
+                            />
+                        <p class="name-comuni-perfil-usuario">John_★</p>
                     </div>
                     </div>
                 </div>
@@ -318,15 +387,23 @@
                 
             <!-- medallas -->
 
-            <div class="medallas">
-                <h3>Generos Favoritos</h3>
-                <div class="tipo-medalla">
-                <span class="medalla">
-                    <img src="/Assetes/Icons/iniciar-sesion.png" alt="inicio-sesion" />
+            <div class="medallas-section-perfil-usuario">
+                <h3 class="title-medalla-perfil-usuario">Medallas</h3>
+                <div class="tipo-medalla-perfil-usuario">
+                <span class="medalla-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/iniciar-sesion.png" 
+                        alt="inicio-sesion" 
+                         class="img-medalla-perfil-usuario"
+                        />
                     Inicio de sesion
                 </span>
-                <span class="medalla">
-                    <img src="/Assetes/Icons/social (1).png" alt="reseña" />
+                <span class="medalla-perfil-usuario">
+                    <img 
+                        src="/Assetes/Icons/social (1).png" 
+                        alt="reseña" 
+                         class="img-medalla-perfil-usuario"
+                        />
                     Reseñas
                 </span>
                 </div>

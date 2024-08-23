@@ -6,10 +6,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    margin-right: 10;
+    margin-right: 10; 
 }
 
-body {
+.body-perfil-usuario {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     
 }
 
-main {
+.main-perfil-usuario {
     background-color: #fff;
     margin-top: 50px;
     max-height: 80%;
@@ -35,14 +35,14 @@ main {
 
 
 /* Cuando el menú lateral está abierto */
-.sidebar.active ~ main.shifted {
+.sidebar.active ~ .main-perfil-usuario.shifted {
     margin-left: 250px; /* Ajusta el valor según el ancho de tu menú lateral */
 }
 
 
 /* Banner */
 
-.banner-container {
+.banner-container-perfil-usuario {
     position: relative; /* This will help to position the profile photo on top */
     width: 100%;
     height: 30vh; /* Reduce la altura en pantallas pequeñas */
@@ -51,7 +51,7 @@ main {
 }
 
 
-.banner {
+.banner-perfil-usuario {
     width: 100%;
     height: 40vh; /* Ajusta la altura según sea necesario */
     border-top-left-radius: 20px;
@@ -60,7 +60,7 @@ main {
     overflow: hidden; /* Evita que el contenido dentro del banner se desborde */
 }
 
-.banner-image {
+.banner-image-perfil-usuario {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -70,7 +70,7 @@ main {
 /* Foto usuario */
 
 /* este es el div */
-.foto-usuario {
+.foto-usuario-perfil-usuario {
     position: absolute; /* Permite la posición fuera del flujo normal del documento */
     bottom: -50px; /* Mueve la foto de perfil hacia abajo para que sobresalga del banner */
     left: 12%;
@@ -82,7 +82,7 @@ main {
     z-index: 10; /* Asegura que la foto se muestre por encima del banner */
 }
 
-.profile-photo {
+.profile-photo-perfil-usuario {
     width: 22vh; /* Size of the profile photo */
     height: 22vh;
     border-radius: 50%; /* Circular photo */
@@ -94,7 +94,7 @@ main {
     top: 120px; /* Adjust to move the photo up */
 }
 
-.foto-usuario h4 {
+.name-usua-perfil-usuario {
     color: #000000;
     margin: 0;
     margin-top: 120px;
@@ -105,7 +105,7 @@ main {
 /* boton de ditar  */
 
 
-.editar-btn {
+.editar-btn-perfil-usuario {
     margin-top: -13vh;
     margin-left: 280vh; /* Espacio de 50px a la derecha de la foto de perfil */
     padding: 5px 30px;
@@ -123,7 +123,7 @@ main {
 
 /* Informacion */
 
-.informacion {
+.informacion-perfil-usuario {
     margin-top: 35vh;
     margin-left: 9vh;
     font-size: 16px;
@@ -132,32 +132,32 @@ main {
     margin-bottom: 20px;
 }
 
-.item {
+.item-perfil-usuario {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
     margin-top: 1vh; /* Espacio entre cada línea */
 }
 
-.label {
+.label-perfil-usuario {
     font-weight: 600;
     margin-right: 10px; /* Espacio entre la etiqueta y el valor */
 }
 
-.value {
+.value-perfil-usuario {
     font-weight: 400;
 }
 
 /* Linea */
 
-.line-container {
+.line-container-perfil-usuario {
     position: relative;
     width: 100%; /* Ajusta según necesites */
     margin: -74px 0;
     height: 50px; /* Asegura que el contenedor tenga al menos la altura de la línea */
 }
   
-.line {
+.line-perfil-usuario {
     position: absolute;
     top: -16.5vh; /* Ajusta para mover la línea verticalmente si es necesario */
     left: 48%; /* Ajusta para mover la línea horizontalmente si es necesario */
@@ -170,14 +170,14 @@ main {
 
 /* biografia */
 
-.biografia {
+.biografia-perfil-usuario {
     max-width: 75vh; /* Ajusta según el espacio disponible */
     margin-top: -25vh; /* Opcional: agrega un margen superior para separar del contenedor */
     margin-left: 89vh;
     margin-right: 8vh;
 }
   
-.biografia p {
+.text-biografia-perfil-usuario {
     margin: 0; /* Elimina márgenes por defecto del párrafo */
     color: #000;
     font-size: 20px;
@@ -189,24 +189,24 @@ main {
 
 /* generos */
 
-.generos {
+.generos-perfil-usuario {
     margin-top: 20vh;
     margin-left: 9vh;
 }
 
-.generos h3 {
+.title-genero-perfil-usuario {
     font-weight: 600;
     color: #000;
 }
 
-.tipo-generos {
+.tipo-generos-perfil-usuario {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
     gap: 30px; /* Espacio entre los elementos */
 }
 
-.tipo-generos .genero {
+.genero-perfil-usuario {
     color: #000;
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos dentro del span */
@@ -219,7 +219,7 @@ main {
     line-height: 1.5; /* Ajusta la altura de línea para mejorar la alineación vertical */
 }
 
-.tipo-generos .genero img {
+.img-genero-perfil-usuario {
     width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
     margin-right: 10px; /* Espacio entre la imagen y el texto */
@@ -227,20 +227,20 @@ main {
 
 /* amigos */
 
-.amigos {
+.amigos-perfil-usuario {
     margin-top: 10vh;
     margin-left: 9vh;
     position: relative; /* Necesario para posicionar el botón en relación con este contenedor */
 }
 
-.boton-ver-mas {
+.div-ver-mas-perfil-usuario {
     position: absolute;
     top: 30px; /* Ajusta este valor según sea necesario */
     right: 0;
     margin-right: 80px; /* Espacio desde el borde derecho */
 }
 
-.boton-ver-mas button {
+.boton-ver-mas-perfil-usuario {
     background-color: #ffffff; /* Color de fondo del botón */
     color: #22223B; /* Color del texto del botón */
     border: 0.2px solid  #22223B; /* Sin borde */
@@ -251,17 +251,17 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
 }
 
-.boton-ver-mas button:hover {
+.boton-ver-mas-perfil-usuario:hover {
     background-color: #8e92a77e; /* Color de fondo del botón cuando se pasa el mouse */
 }
 
-.amigos h3 {
+.seccion-title-perfil-usuario {
     font-weight: 600;
     color: #000;
     margin-top: 40px; /* Asegura espacio suficiente debajo del botón */
 }
 
-.seccion-amigos {
+.seccion-amigos-perfil-usuario {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
     gap: 15px; /* Espacio entre las fotos de perfil */
@@ -269,7 +269,7 @@ main {
     justify-content: center; /* Centra las fotos en la pantalla */
 }
 
-.foto-amigo {
+.foto-amigo-perfil-usuario {
     display: flex;
     flex-direction: column; /* Alinea la imagen y el texto verticalmente */
     align-items: center; /* Centra la imagen y el texto horizontalmente */
@@ -277,7 +277,7 @@ main {
     position: relative; /* Para posicionar el texto correctamente */
 }
 
-.foto-amigo img {
+.img-amigo-perfil-usuario {
     width: 80%; /* Ajusta el ancho de la imagen al tamaño del contenedor */
     height: 18vh; /* Tamaño fijo para la altura */
     border: 1px solid #22223B;
@@ -287,7 +287,7 @@ main {
     margin-left: -8vh;
 }
 
-.foto-amigo p {
+.name-usuar-perfil-usuario {
     position: absolute;
     bottom: -17vh; /* Ajusta este valor para posicionar el texto debajo de la imagen */
     left: 38%; /* Centra el texto horizontalmente */
@@ -302,20 +302,20 @@ main {
 
 /* comunidades */
 
-.comunidades {
+.comunidades-perfil-usuario {
     margin-top: 15vh;
     margin-left: 9vh;
     position: relative; /* Necesario para posicionar el botón en relación con este contenedor */
 }
 
-.comunidades h3 {
+.seccion-title-perfil-usuario {
     font-weight: 600;
     color: #000;
     margin-top: 100px; /* Asegura espacio suficiente debajo del botón */
 
 }
 
-.seccion-comunidad {
+.seccion-comunidad-perfil-usuario {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
     gap: 15px; /* Espacio entre las fotos de perfil */
@@ -323,7 +323,7 @@ main {
     justify-content: center; /* Centra las fotos en la pantalla */
 }
 
-.foto-comunidad {
+.foto-comunidad-perfil-usuario {
     display: flex;
     flex-direction: column; /* Alinea la imagen y el texto verticalmente */
     align-items: center; /* Centra la imagen y el texto horizontalmente */
@@ -331,7 +331,7 @@ main {
     position: relative; /* Para posicionar el texto correctamente */
 }
 
-.foto-comunidad img {
+.img-comunidad-perfil-usuario{
     width: 80%; /* Ajusta el ancho de la imagen al tamaño del contenedor */
     height: 18vh; /* Tamaño fijo para la altura */
     border: 1px solid #22223B;
@@ -341,7 +341,7 @@ main {
     margin-left: -8vh;
 }
 
-.foto-comunidad p {
+.name-comuni-perfil-usuario {
     position: absolute;
     bottom: -17vh; /* Ajusta este valor para posicionar el texto debajo de la imagen */
     left: 38%; /* Centra el texto horizontalmente */
@@ -355,24 +355,24 @@ main {
 
 /* medallas */
 
-.medallas {
+.medallas-section-perfil-usuario {
     margin-top: 10vh;
     margin-left: 9vh;
 }
 
-.medallas h3 {
+.title-medalla-perfil-usuario {
     font-weight: 600;
     color: #000;
 }
 
-.tipo-medalla {
+.tipo-medalla-perfil-usuario {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
     gap: 30px; /* Espacio entre los elementos */
 }
 
-.tipo-medalla .medalla {
+.medalla-perfil-usuario {
     color: #000;
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos dentro del span */
@@ -386,7 +386,7 @@ main {
     line-height: 1.5; /* Ajusta la altura de línea para mejorar la alineación vertical */
 }
 
-.tipo-medalla .medalla img {
+.img-medalla-perfil-usuario{
     width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
     margin-right: 10px; /* Espacio entre la imagen y el texto */

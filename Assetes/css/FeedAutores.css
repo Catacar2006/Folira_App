@@ -2,7 +2,7 @@
 
 
 
-main {
+.main-feedautores {
     background-color: #fff;
     margin-top: 115px;
     max-height: 80%;
@@ -15,7 +15,7 @@ main {
 }
 
 
-.title-section-book{
+.title-feed-autores{
     padding: 30px;
     color: #503B31;
     margin-left: 20px;
@@ -25,14 +25,14 @@ main {
 }
 
 /* titulo de las secciones */
-.title-book{
+.title-section-feedautores{
     padding: 40px;
     color: #503B31;
     margin-left: 10px;
     font-family: 'Poppins', sans-serif;
 }
 
-.text-section-book{
+.text-feed-autores{
     color: #000000;
     font-size: 24px;
     width: 90%;
@@ -83,7 +83,7 @@ main {
 }
 
 /* Estilo del título dentro del modal */
-.modal-content-autores h2 {
+.title-modal-feedUsuariio {
     color: #503b31;
     text-align: center;
     margin: 0; 
@@ -211,7 +211,7 @@ main {
 }
 
 /* Estilo del título dentro del modal */
-.modal-content-autor h2 {
+.title-modal-feedUsuariio {
     color: #503b31;
     text-align: center;
     margin: 0; 

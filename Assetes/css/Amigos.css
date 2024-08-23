@@ -2,7 +2,7 @@
 
 
 
-main {
+.main-amigos {
     background-color: #fff;
     margin-top: 115px;
     max-height: 80%;
@@ -18,7 +18,7 @@ main {
 
 
 /* titulo de la seccion */
-.title-section-amigo{
+.title-encabezado-amigo{
     padding: 30px;
     color: #503B31;
     margin-left: -10px;
@@ -67,6 +67,7 @@ main {
     background-color:  #503b311a;
 }
 
+
 /* Estilos del modal */
 .modal {
     display: none; /* Oculta el modal por defecto */
@@ -91,7 +92,7 @@ main {
 }
 
 /* Estilo del título dentro del modal */
-.modal-content h2 {
+.modal-content .title-modal {
     color: black;
     text-align: center;
     margin: 0; 
@@ -138,7 +139,7 @@ main {
 }
 
 /* Estilo del botón de cerrar */
-.close {
+.close-amigo {
     position: absolute;
     top: 5px;
     right: 10px;
@@ -153,7 +154,8 @@ main {
     display: flex;
 }
 
-/* estilos de las imagenes */
+
+/* estilos de las imagenes ------------------------ */
 .amigos-container {
     display: flex;
     flex-wrap: wrap; 
@@ -180,7 +182,7 @@ main {
     text-align: center; /* Asegura que el texto esté centrado */
 }
 
-/* amigos que te pueden gustar */
+/* amigos que te pueden gustar --------------*/
 .title-amigo-gustar{
     color: black;
     margin-top: 60px; 
@@ -192,6 +194,7 @@ main {
     justify-content: center;
     text-align: left; 
 }
+
 .amigos-gustar-container{
     display: flex;
     flex-wrap: wrap; 
@@ -235,7 +238,7 @@ main {
 }
 
 /* Estilo del título dentro del Modal 2 */
-.modal-gustar-content h2 {
+.modal-gustar-content .amigos-modal {
     color: #503B31;
     text-align: center;
     margin: 0;

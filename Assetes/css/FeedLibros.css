@@ -2,7 +2,7 @@
 
 
 
-main {
+.main-libros {
     background-color: #fff;
     margin-top: 115px;
     max-height: 80%;
@@ -13,18 +13,17 @@ main {
     border-top-right-radius: 20px; 
     border: 0.5px solid #50505e;
 }
-
-
-.title-section-book{
+ 
+.title-libro{
     padding: 30px;
     color: #503B31;
-    margin-left: 20px;
+    margin-left: 20px; 
     font-family: 'Poppins', sans-serif;
     font-weight: 450;
     font-size: 45px;  
 }
 
-.text-section-book{
+.text-section-libro{
     color: #000000;
     margin-left: 60px;
     font-size: 25px;
@@ -33,7 +32,7 @@ main {
     margin-left: 50px;
 }
 
-.title-section{
+.title-section-libro{
     padding: 30px;
     color: #503B31;
     margin-left: 20px;
@@ -60,7 +59,7 @@ main {
 
 
 
-.book-container {
+.libro-container {
     display: flex;
     flex-wrap: wrap;
     gap: 45px; /* Espacio de 10px entre los elementos */
@@ -68,7 +67,7 @@ main {
     margin: 30px 30px 70px 30px;
 }
 
-.book-item {
+.libro-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,21 +79,14 @@ main {
 
 /* no poner cuidado a book_comunity */
 
-.book_comunity {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: auto;
-    border-radius: 20px; /* Ajusta según el estilo deseado */
-    border: 1px solid #22223B;
-}
-
-.book-comunity-perso{
+.libro-comunity-perso{
     width: 150px; /* Ajusta el tamaño según tus necesidades */
     height: 240px;
     border-radius: 20px; /* Ajusta según el estilo deseado */
     border: 1px solid #22223B;
 }
 
-.title-book {
+.title-libro-section {
     color: black;
     margin-top: 10%; /* Espacio entre la imagen y el título */
     font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
@@ -106,7 +98,7 @@ main {
     text-align: center; /* Asegura que el texto esté centrado */
 }
 
-.rating {
+.rating-libro {
     color: #22223B;
     font-size: 16px; /* Ajusta el tamaño según tus necesidades */
     margin-top: 10px; /* Espacio entre el título y la calificación */
@@ -114,7 +106,7 @@ main {
     justify-content: center;
 }
 
-.rating img {
+.rating-libro img {
     width: 25px; /* Ajusta el tamaño de las estrellas según tus necesidades */
     height: auto;
     margin: 0 2px; /* Espacio entre las estrellas */

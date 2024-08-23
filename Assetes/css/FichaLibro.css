@@ -105,7 +105,7 @@
 .gustos-container-ficha-libro {
     display: flex;
     gap: 40px; 
-    margin: 30px 0 30px 1100px; 
+    margin: 30px 0 30px 1150px; 
     justify-content: center; 
     
 
@@ -199,92 +199,107 @@
 }
 
 /* estilos del link */
-.ver-mas{
-    position: relative;
-    left: 0%;
-    top: -3vh;
-    font-size: 20px;
-    border: 1px solid  #503B31;
-    padding: 8px 15px 8px 15px;
-    border-radius: 25px;
+/* Estilo para el botón "Ver más" */
+.ver-mas-ficha-libro {
+    background-color: #ffffff;
+    color: #503b31;
+    border: 1px solid #503b31;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
-    color: #503B31;
+    display: inline-block;
+    font-size: 22px;
+    margin: -10px 0 10px 0;
+    border-radius: 5px;
 }
 
-.ver-mas:hover{
-    background-color:  #503b311a;
+.ver-mas-ficha-libro{
+    color: #503b31;
+    text-decoration: none;
 }
 
-/* modal -----*/
+.ver-mas-ficha-libro:hover {
+    background-color: #503b3133;
+}
 
-/* Estilos generales del modal */
+/* Estilo general para el modal */
 .modal-ficha-libro {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Fijo para que ocupe toda la pantalla */
-    z-index: 9999; /* Asegura que esté encima de otros elementos */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    overflow: hidden;  /* Fondo semitransparente */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
 }
 
+/* Estilo para el contenido del modal */
 .modal-content-ficha-libro {
-    background-color: #fff;
-    position: absolute; /* Posición absoluta para centrarlo */
+    background-color: #fefefe;
+    position: absolute;
     top: 50%; /* Centro vertical del modal */
-    left: 50%; /* Centro horizontal del modal */
-    transform: translate(-50%, -50%); /* Ajusta la posición para centrarlo */
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ajusta el ancho del modal */
-    max-width: 1000px; /* Ancho máximo del modal */
-    border-radius: 8px; /* Bordes redondeados */
-    max-height: calc(80vh - 40px); /* Ajusta la altura máxima para el margen inferior */
-    overflow-y: auto; /* Permite el desplazamiento vertical dentro del modal */
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    max-height: calc(80vh - 40px);
+    overflow-y: auto;
     scrollbar-width: thin; /* Estilo para navegadores como Firefox */
     scrollbar-color: #503b31 #f5f5f5; /* Estilo para la barra de desplazamiento */
-    margin-bottom: 40px; 
+    margin-bottom: 50px;
 }
 
-/* Estilo para el botón de cerrar */
+/* Estilo para la cruz de cierre */
 .modal-close-ficha-libro {
-    position: absolute; /* Posicionamiento absoluto dentro del modal */
+    position: absolute;
     top: 10px; /* Espacio desde el borde superior */
     right: 10px; /* Espacio desde el borde derecho */
     font-size: 34px; /* Tamaño de la fuente para el icono de cierre */
     color: #503b31; /* Color del icono de cierre */
     cursor: pointer;
-    
+    text-decoration: none;
 }
 
 .modal-close-ficha-libro:hover,
 .modal-close-ficha-libro:focus {
-    color: #503B31;
+    color: #503b31;
     text-decoration: none;
+    cursor: pointer;
 }
 
-/* Estilos específicos del contenido del modal */
+/* Estilo para el contenido de la reseña dentro del modal */
 .modal-review-ficha-libro {
-    margin: 30px 20px 20px 20px ;
-    border: 1px solid #503B31;
-    border-radius: 10px;
-    padding: 20px 20px 10px 20px;
+    border: 1px solid #503b31;
+    margin: 40px 10px 10px 10px;
+    padding: 20px 10px 10px 20px;
+    border-radius: 15px;
+    text-align: left;
+    
 }
 
 .modal-name-usuario-ficha {
-    font-size: 20px;
-    color: #000;
+    color: #503b31;
+    font-size: 18px;
 }
 
 .modal-reseña-ficha-librousu {
     color: #000;
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .modal-rating-container-ficha-libro {
+    margin-top: 10px;
+}
+
+.modal-rating {
     display: flex;
     align-items: center;
 }
@@ -293,6 +308,11 @@
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+
+/* Mostrar el modal cuando se hace clic en el enlace */
+#Modal-agregar-libro:target {
+    display: block;
 }
 
 /* fin modal --- */
