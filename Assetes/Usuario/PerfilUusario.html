@@ -15,145 +15,6 @@
     <title>Perfil de usuario normal    </title>
 </head>
 <body class="body-perfil-usuario">
-        <!-- Barra Lateral -->
-<div class="container">
-    <div class="sidebar active">
-        <!-- flechita -->
-        <div class="menu-btn">
-            <i class="ph-bold ph-caret-left"></i>
-        </div>
-
-        <!-- foto -->
-        <div class="head">
-            <div class="user-img">
-                <img src="/Assetes/img/dp4.jpeg" alt="Foto de usuario" />
-            </div>
-            <div class="user-details">
-                <p class="name">Moon 85</p>
-            </div>
-        </div>
-
-        <!-- nav -->
-        <div class="nav">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-house"></i
-                        ><span class="text">Inicio</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-users"></i
-                        ><span class="text">Amigos</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-book"></i
-                        ><span class="text">Libros</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-quotes"></i
-                        ><span class="text">Autores</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-pencil-simple-line"></i
-                        ><span class="text">Reseñas</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-chat-teardrop-dots"></i
-                        ><span class="text">Comunidades</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-warning"></i
-                        ><span class="text">Denuncias</span></a
-                        >
-                </li>
-                </ul>
-            </div>
-            </div>
-
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="#"
-                ><i class="icon ph-bold ph-sign-out"></i
-                ><span class="text">Salir</span></a
-              >
-            </li>
-          </ul>
-        </div>
-    </div>
-</div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <img src="/Assetes/img/folira-logo.png" alt="Logo" class="app-logo" />
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <div class="search-container">
-                  <input
-                    type="text"
-                    class="search-input"
-                    placeholder="Busca aquí ..."
-                  />
-                  <button class="search-button">
-                    <img
-                      src="/Assetes/img/lupa.png"
-                      alt="Buscar"
-                      class="search-icon"
-                    />
-                  </button>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
-                    src="/Assetes/img/notificaciones_icon.png"
-                    alt="Notificaciones"
-                    class="nav-icon"
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
-                    src="/Assetes/img/ajustes_icon.png"
-                    alt="Ajustes"
-                    class="nav-icon"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    
 
     <!-- Main Content -->
     <div class="col-md-9 col-lg-10">
@@ -267,7 +128,7 @@
             <div class="amigos-perfil-usuario">
                 <!-- boton de ver mas -->
                 <div class="div-ver-mas-perfil-usuario">
-                <button class="boton-ver-mas-perfil-usuario">Ver Más</button>
+                <a href="" class="boton-ver-mas-perfil-usuario">Ver Más</a>
                 </div>
                 
                 <h3 class="seccion-title-perfil-usuario">Amigos</h3>
@@ -322,6 +183,42 @@
                 </div>
                 </div>
             </div>
+
+            <!-- modal de los amigos -->
+            <div id="modal-amigos-miperfil" class="modal-amigos-miperfil">
+                <div class="modal-content-amigos-miperfil">
+                  <div class="modal-header-amigos-miperfil">
+                    <h2 class="modal-title-amigos-miperfil">Amigos</h2>
+                    <a href="#" class="modal-close-amigos-miperfil">&times;</a>
+                  </div>
+                  <div class="modal-amigos-container-amigos-miperfil">
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp7.jpg" alt="Alex_㋛">
+                      <a href="#" class="name-usuar-perfil-usuario">Alex_㋛</a>
+                    </div>
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp8.jpeg" alt="Emma_✩">
+                      <a href="#" class="name-usuar-perfil-usuario">Emma_✩</a>
+                    </div>
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp9.jpeg" alt="John_★">
+                      <a href="#" class="name-usuar-perfil-usuario">John_★</a>
+                    </div>
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp7.jpg" alt="Alex_㋛">
+                      <a href="#" class="name-usuar-perfil-usuario">Alex_㋛</a>
+                    </div>
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp8.jpeg" alt="Emma_✩">
+                      <a href="#" class="name-usuar-perfil-usuario">Emma_✩</a>
+                    </div>
+                    <div class="foto-amigo-perfil-usuario">
+                      <img class="img-amigo-perfil-usuario" src="/Assetes/img/cp9.jpeg" alt="John_★">
+                      <a href="#" class="name-usuar-perfil-usuario">John_★</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
                 <!-- Comunidades -->
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     margin-right: 10;
-}
+} */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -113,12 +113,202 @@ body {
     border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .editar-btn-miperfil:hover {
     background-color: #503b3133; /* Color al pasar el mouse */
 }
 
+/* Estilo base para el modal */
+.modal-miperfil-usuario {
+    display: none; /* Esconder el modal por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: auto;
+}
+
+/* Mostrar el modal cuando el enlace apunta a su id */
+#editModal:target {
+    display: block;
+}
+
+.modal-content-miperfil-usuario {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    top: 65px;
+    color: #503B31;
+    scrollbar-width: thin; /* Para navegadores como Firefox */
+    scrollbar-color: #503b31 #f5f5f5;
+}
+
+.header-miperfil-usuario {
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Asegura que el header esté por encima del contenido al hacer scroll */
+    background-color: #ffffff; /* Color de fondo del header */
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1.5px solid #503B31;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.close-miperfil-usuario {
+    color: #503B31;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* Asegura que no haya subrayado */
+    position: absolute; /* Posiciona el botón */
+    top: -2px; /* Ajusta según sea necesario */
+    left: 10px; /* Ajusta según sea necesario */
+    padding: 10px; /* Aumenta el área clicable */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+
+  /* Opcional: Estilos para cuando se pasa el cursor sobre el botón */
+.close-miperfil-usuario:hover {
+    color: black; /* Cambia el color cuando se pasa el cursor */
+  }
+
+.title-editar-miperfil-usuario {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -40vh;
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
+    color: #503B31;
+    font-weight: 600;
+}
+
+.guardar-cambios-btn-miperfil-usuario {
+    background-color: #ffffff;
+    color: #503B31;
+    border: none;
+    padding: 8px 16px;
+    border: 1px solid #503B31;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.guardar-cambios-btn-miperfil-usuario:hover {
+    background-color: #503b311a;
+}
+
+/* Estilo para el contenido del modal */
+.modal-content-body-miperfil-usuario {
+    padding: 10px 20px 20px 20px;
+}
+
+/* Estilo para el formulario */
+.edit-form {
+    /* Puedes agregar estilos adicionales aquí si es necesario */
+}
+
+/* Estilo para los labels */
+.edit-form-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #503B31;
+    font-weight: 600;
+}
+
+/* Estilo para los inputs */
+.edit-form-input, .edit-form-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 1px solid #503B31;
+    border-radius: 5px;
+    color: #000000;
+}
+
+/* Estilo para el textarea */
+.edit-form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 1px solid #503B31;
+    border-radius: 5px;
+    color: #000000;
+    resize: none;
+    height: 80px;
+}
+
+/* Estilo cuando los elementos están en foco */
+.edit-form-input:focus, .edit-form-textarea:focus, .edit-form-select:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+/* Estilo adicional para placeholders */
+.edit-form-input::placeholder, .edit-form-textarea::placeholder {
+    color: #503B31;
+}
+
+/* genero modal */
+
+.genre-checkbox {
+    display: none; /* Oculta el checkbox */
+  }
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .genre-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .genre-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .genre-checkbox:checked + .genre-label {
+    border-color: #000;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .genre-label:hover {
+    border-color: #888;
+    background-color: #f7f7f7;
+  }
 
 
 /* Informacion */
@@ -225,6 +415,167 @@ body {
     margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
 
+/* secciond e libros guardados */
+
+.libros-aguardados-miperfil {
+    margin-top: 15vh;
+    margin-left: 9vh;
+    position: relative; /* Necesario para posicionar el botón en relación con este contenedor */
+}
+
+.div-ver-mas-libro-miperfil{
+    position: absolute;
+    top: 25px; /* Ajusta este valor según sea necesario */
+    right: 0;
+    margin-right: 80px; /* Espacio desde el borde derecho */
+}
+
+.boton-ver-mas-libro-miperfil {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #503B31; /* Color del texto del botón */
+    border: 0.2px solid  #503B31; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 9px 16px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+    text-decoration: none;
+}
+
+.boton-ver-mas-libro-miperfil:hover {
+    background-color: #503b311a; /* Color de fondo del botón cuando se pasa el mouse */
+}
+
+.seccion-title-libro-miperfil {
+    font-weight: 600;
+    color: #000;
+    margin-top: -30px; /* Asegura espacio suficiente debajo del botón */
+}
+
+.seccion-libro-miperfil {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
+    gap: 15px; /* Espacio entre las fotos de perfil */
+    margin-left: -8vh;
+    justify-content: center; /* Centra las fotos en la pantalla */
+}
+
+.foto-libro-miperfil {
+    display: flex;
+    flex-direction: column; /* Alinea la imagen y el texto verticalmente */
+    align-items: center; /* Centra la imagen y el texto horizontalmente */
+    width: 23vh; /* Tamaño del contenedor */
+    position: relative; /* Para posicionar el texto correctamente */
+}
+
+.img-libro-miperfil {
+    width: 80%; /* Ajusta el ancho de la imagen al tamaño del contenedor */
+    height: 30vh; /* Tamaño fijo para la altura */
+    border: 1px solid #22223B;
+    border-radius: 5%; /* Foto circular */
+    object-fit: cover; /* Mantiene la imagen dentro del contenedor sin distorsión */
+    margin-top: 50px; /* Ajusta este valor según sea necesario */
+    margin-left: -8vh;
+}
+
+/* MODAL DE LOS LIBROS */
+
+/* Estilos del Modal */
+.modal-overlay-libro-miperfil {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* En la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: hidden; /* Desplazamiento si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro con opacidad */
+    
+  }
+
+  
+  
+  .modal-content-libro-miperfil {
+    position: relative; /* Posicionamiento relativo para el contenido del modal */
+    background-color: #fefefe;
+    margin: 5% auto; /* Centramos el modal */
+    padding: 0; /* Sin relleno interno aquí */
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 320px; /* Ancho máximo */
+    height: 80vh; /* Altura del modal */
+    overflow: hidden; /* Ocultar el desbordamiento del modal */
+    border-radius: 8px; /* Bordes redondeados */
+  
+   
+  }
+
+  
+  
+  .modal-header-libro-miperfil {
+    position: sticky; /* Fijo dentro del contenedor del modal */
+    top: 0; /* Pegado a la parte superior del modal */
+    background-color: #fefefe; /* Fondo para el título */
+    padding: 10px; /* Espaciado alrededor del título */
+    border-bottom: 1px solid #888; /* Línea debajo del título */
+    z-index: 1001; /* Asegura que esté encima del contenido del modal */
+  }
+  
+  .modal-close-libro-miperfil {
+    float: right;
+    color: #503B31;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin: -4px 10px 10px 0;
+  }
+  
+  .modal-title-libro-miperfil {
+    margin: 5px ; 
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .modal-books-container-libro-miperfil {
+    display: flex;
+    flex-direction: column; /* Alinea los libros verticalmente */
+    gap: 15px; /* Espaciado entre elementos */
+    margin-top: 10px;
+    padding: 5px 5px 30px 30px; /* Espaciado alrededor del contenido */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    height: calc(100% - 40px); /* Ajusta la altura para el contenido desplazable */
+    scrollbar-width: thin; /* Para navegadores como Firefox */
+    scrollbar-color: #503b31 #f5f5f5;
+  }
+  
+  .modal-book-item-libro-miperfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 10px; /* Espaciado entre imagen y texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  .modal-book-img-libro-miperfil {
+    width: 60px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .modal-book-title-libro-miperfil {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Mostrar el modal cuando el enlace apunta al ID del modal */
+  #modal-libro-miperfil:target {
+    display: block;
+  }
+  /* finmodal -libro-miperfil */
+
+
+
 /* amigos */
 
 .amigos-miperfil {
@@ -242,17 +593,19 @@ body {
 
 .boton-ver-mas-miperfil {
     background-color: #ffffff; /* Color de fondo del botón */
-    color: #22223B; /* Color del texto del botón */
-    border: 0.2px solid  #22223B; /* Sin borde */
+    color: #503B31; /* Color del texto del botón */
+    border: 0.2px solid  #503B31; /* Sin borde */
     border-radius: 20px; /* Bordes redondeados */
-    padding: 5px 15px; /* Espaciado interno del botón */
+    padding: 9px 16px; /* Espaciado interno del botón */
     cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
     font-size: 16px; /* Tamaño de la fuente */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+    text-decoration: none;
+    
 }
 
 .boton-ver-mas-miperfil:hover {
-    background-color: #8e92a77e; /* Color de fondo del botón cuando se pasa el mouse */
+    background-color: #503b311a; /* Color de fondo del botón cuando se pasa el mouse */
 }
 
 /* seccion amigos */
@@ -299,6 +652,125 @@ body {
     text-align: center; /* Centra el texto */
     top: 27vh;
 }
+
+
+/* Modal AMIgos */
+
+/* Estilos del enlace que abre el modal */
+.modal-open {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #503b31; /* Color de fondo del botón */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el enlace cuando se pasa el mouse por encima */
+  .modal-open:hover {
+    background-color: #402a1f; /* Color de fondo en hover */
+  }
+  
+  /* Estilos del Modal */
+  .modal-amigos-miperfil {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* En la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: hidden; /* Desplazamiento si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro con opacidad */
+  }
+  
+  .modal-content-amigos-miperfil {
+    position: relative; /* Posicionamiento relativo para el contenido del modal */
+    background-color: #fefefe;
+    margin: 5% auto; /* Centramos el modal */
+    padding: 0; /* Sin relleno interno aquí */
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 290px; /* Ancho máximo */
+    height: 80vh; /* Altura del modal */
+    overflow: hidden; /* Ocultar el desbordamiento del modal */
+    border-radius: 8px; /* Bordes redondeados */
+   
+  }
+  
+  /* Contenedor del encabezado del Modal */
+.modal-header-amigos-miperfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre el título y el botón de cerrar */
+    padding: -5px; /* Espaciado interno */
+    border-bottom: 2px solid #ccc; /* Borde inferior */
+  }
+  
+  /* Botón de cerrar */
+  .modal-close-amigos-miperfil {
+    float: right;
+    color: #503B31;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2px 10px 10px 0;
+  }
+  
+  /* Título del Modal */
+  .modal-title-amigos-miperfil {
+    margin: 8px 0 1px 100px; 
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Contenedor de amigos del Modal */
+  .modal-amigos-container-amigos-miperfil {
+    display: flex;
+    flex-direction: column; /* Alinea los amigos verticalmente */
+    gap: 15px; /* Espaciado entre elementos */
+    margin-top: 10px;
+    padding: 5px 5px 30px 30px; /* Espaciado alrededor del contenido */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    height: calc(100% - 40px); /* Ajusta la altura para el contenido desplazable */
+    scrollbar-width: thin; /* Ancho de la barra de desplazamiento (delgada) */
+    scrollbar-color: #503b31 #f5f5f5; /* Color del deslizador y del fondo */
+  }
+  
+  /* Elemento de amigo del Modal */
+  .modal-amigos-amigos-miperfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 10px; /* Espaciado entre imagen y texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  /* Imagen del amigo del Modal */
+  .modal-img-amigo-amigos-miperfil {
+    border-radius: 50%;
+    border: 1px solid #000000;
+    height: 60px; /* Ajusta el tamaño si es necesario */
+    width: 60px; /* Ajusta el tamaño si es necesario */
+    object-fit: cover;
+  }
+  
+  /* Nombre del amigo del Modal */
+  .modal-name-amigo-amigos-miperfil {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Mostrar el modal cuando el enlace apunta al ID del modal */
+  #modal-amigos-miperfil:target {
+    display: block;
+  }
+  
+/* fin modla amigos */
 
 
 /* comunidades */
@@ -353,6 +825,105 @@ body {
     text-align: center; /* Centra el texto */
     top: 27vh;
 }
+
+/* modal de comunidades */
+
+/* Estilos del Modal */
+.modal-comunidades-miperfil {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* En la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: hidden; /* Desplazamiento si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro con opacidad */
+  }
+  
+  .modal-content-comunidades-miperfil {
+    position: relative; /* Posicionamiento relativo para el contenido del modal */
+    background-color: #fefefe;
+    margin: 5% auto; /* Centramos el modal */
+    padding: 0; /* Sin relleno interno aquí */
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 290px; /* Ancho máximo */
+    height: 80vh; /* Altura del modal */
+    overflow: hidden; /* Ocultar el desbordamiento del modal */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Contenedor del encabezado del Modal */
+  .modal-header-comunidades-miperfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre el título y el botón de cerrar */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 2px solid #ccc; /* Borde inferior */
+  }
+  
+  /* Botón de cerrar */
+  .modal-close-comunidades-miperfil {
+    color: #503B31;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Título del Modal */
+  .modal-title-comunidades-miperfil {
+    margin: 8px 0 1px 50px; 
+    font-size: 25px;
+    
+  }
+  
+  /* Contenedor de comunidades del Modal */
+  .modal-comunidades-container-comunidades-miperfil {
+    display: flex;
+    flex-direction: column; /* Alinea las comunidades verticalmente */
+    gap: 15px; /* Espaciado entre elementos */
+    margin-top: 10px;
+    padding: 5px 5px 30px 30px; /* Espaciado alrededor del contenido */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    height: calc(100% - 40px); /* Ajusta la altura para el contenido desplazable */
+    scrollbar-width: thin; /* Ancho de la barra de desplazamiento (delgada) */
+    scrollbar-color: #503b31 #f5f5f5; /* Color del deslizador y del fondo */
+  }
+  
+  /* Elemento de comunidad del Modal */
+  .modal-comunidad-comunidades-miperfil {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 10px; /* Espaciado entre imagen y texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  /* Imagen de la comunidad del Modal */
+  .modal-img-comunidad-comunidades-miperfil {
+    border-radius: 50%;
+    border: 1px solid #000000;
+    height: 60px; /* Ajusta el tamaño si es necesario */
+    width: 60px; /* Ajusta el tamaño si es necesario */
+    object-fit: cover;
+  }
+  
+  /* Nombre de la comunidad del Modal */
+  .modal-name-comunidad-comunidades-miperfil {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Mostrar el modal cuando el enlace apunta al ID del modal */
+  #modal-comunidades-miperfil:target {
+    display: block;
+  }
+/* fin modal comunidades */
+
+
+
+
 
 /* medallas */
 

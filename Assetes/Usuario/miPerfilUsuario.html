@@ -169,10 +169,160 @@
               <div class="foto-usuario-miperfil">
                 <img src="/Assetes/img/F_Usu.jpg" alt="" class="profile-photo-miperfil" />
                 <h4 class="name-miperfil">Jeonghan_4🫶🏼</h4>
-                <button class="editar-btn-miperfil">Editar</button> <!-- Botón Editar -->
+                <a href="#editModal" class="editar-btn-miperfil">Editar</a>
               </div>
             </div>
           </div>
+
+          <!-- INICIO MODAL  -->
+
+        <!-- Modal -->
+            <div id="editModal" class="modal-miperfil-usuario">
+              <div class="modal-content-miperfil-usuario">
+                  <div class="header-miperfil-usuario ">
+                      <a href="#" class="close-miperfil-usuario">&times;</a>
+                      <h2 class="title-editar-miperfil-usuario">Editar perfil</h2>
+                      <button type="submit" class="guardar-cambios-btn-miperfil-usuario">Guardar</button>
+                  </div>
+                  <div class="modal-content-body-miperfil-usuario">
+                      <form class="edit-form">
+
+                          <!-- Nueva Foto de Perfil -->
+                          <label for="profilePhoto" class="edit-form-label">Nueva Foto de Perfil</label>
+                          <input type="file" id="profilePhoto" name="profilePhoto" class="edit-form-input">
+                          
+                          <!-- Nuevo Banner -->
+                          <label for="banner" class="edit-form-label">Nuevo Banner</label>
+                          <input type="file" id="banner" name="banner" class="edit-form-input">
+
+                          <!-- Nombre de usuario -->
+                          <label for="username" class="edit-form-label">Nombre</label>
+                          <input type="text" id="username" name="username" value="Thebest_Kpop✨" class="edit-form-input">
+                          
+                          <!-- Biografia -->
+                          <label for="biografia" class="edit-form-label">Biografía</label>
+                          <textarea id="biografia" name="biografia" class="edit-form-textarea">books, kdramas, voley Army | Carat</textarea>
+                          
+                           <!-- País -->
+                          <label for="pais" class="edit-form-label">País</label>
+                          <select id="pais" name="pais" class="edit-form-select">
+                              <option value="Argentina">Argentina</option>
+                              <option value="Chile">Chile</option>
+                              <option value="Colombia">Colombia</option>
+                              <option value="Mexico">México</option>
+                              <option value="Peru">Perú</option>
+                              <option value="Spain">España</option>
+                              <option value="USA">Estados Unidos</option>
+                              <!-- Agrega más países según sea necesario -->
+                          </select>
+                          
+                          <!-- Género -->
+                          <label for="genero" class="edit-form-label">Género</label>
+                          <select id="genero" name="genero" class="edit-form-select">
+                              <option value="femenino">Femenino</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="otro">Otro</option>
+                              <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
+                          </select>
+
+                           <!-- Preferencias de Género -->
+                          <div class="genre-preferences-container">
+                            <label class="edit-form-label">Preferencias de Género</label>
+                            <div class="checkbox-group">
+                              <!-- Género Fantasía -->
+                              <input type="checkbox" id="genre-fantasy" name="genres" value="Fantasy" class="genre-checkbox">
+                              <label for="genre-fantasy" class="genre-label">
+                                <img src="/Assetes/Icons/fantasia.png" alt="Fantasía" class="genre-icon">
+                                Fantasía
+                              </label>
+
+                              <!-- Género Ciencia Ficción -->
+                              <input type="checkbox" id="genre-scifi" name="genres" value="Science Fiction" class="genre-checkbox">
+                              <label for="genre-scifi" class="genre-label">
+                                <img src="/Assetes/Icons/ciencia-ficcion.png" alt="Ciencia Ficción" class="genre-icon">
+                                Ciencia Ficción
+                              </label>
+
+                              <!-- Género Misterio -->
+                              <input type="checkbox" id="genre-mystery" name="genres" value="Mystery" class="genre-checkbox">
+                              <label for="genre-mystery" class="genre-label">
+                                <img src="/Assetes/Icons/anonimo.png" alt="Misterio" class="genre-icon">
+                                Misterio
+                              </label>
+
+                              <!-- Género Terror -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/cuchillo.png" alt="Comedia" class="genre-icon">
+                                Terror
+                              </label>
+
+                              <!-- Género Suspenso -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/gritar.png" alt="Comedia" class="genre-icon">
+                                Suspenso
+                              </label>
+
+                              <!-- Género Romance -->
+                              <input type="checkbox" id="genre-romance" name="genres" value="Romance" class="genre-checkbox">
+                              <label for="genre-romance" class="genre-label">
+                                <img src="/Assetes//Icons/corazon (1).png" alt="Romance" class="genre-icon">
+                                Romance
+                              </label>
+
+                              <!-- Género Comedia -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/comedia.png" alt="Comedia" class="genre-icon">
+                                Comedia
+                              </label>
+
+                              <!-- Género Historia -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/historia.png" alt="Comedia" class="genre-icon">
+                                Historia
+                              </label>
+
+                              <!-- Género Desarrollo Personal -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/desarrollo_personal.png" alt="Comedia" class="genre-icon">
+                                Desarrollo Personal
+                              </label>
+
+                                <!-- Género Negocios -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/negocios.png" alt="Comedia" class="genre-icon">
+                                Negocios
+                              </label>
+
+                              <!-- Género Economia -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/economia2.png" alt="Comedia" class="genre-icon">
+                                Economía
+                              </label>
+
+                                  <!-- Género Psicología -->
+                              <input type="checkbox" id="genre-comedy" name="genres" value="Comedy" class="genre-checkbox">
+                              <label for="genre-comedy" class="genre-label">
+                                <img src="/Assetes/Icons/Psicologia.png" alt="Comedia" class="genre-icon">
+                                Psicología
+                              </label>
+
+                                
+                            </div>
+                          </div>
+                        
+                      </form>
+                  </div>
+              </div>
+            </div>
+
+            <!-- FIN MODAL DE EDITAR -->
 
           <!-- Sección de Información -->
         <!-- informacion -->
@@ -257,72 +407,239 @@
           </div>
         </div>
 
+        
 
-        <!-- Seccion de amigos -->
-        <div class="amigos-miperfil">
+        <!-- SECCION DE LOS LIBRO GUARDADOS -->
+
+         <div class="libros-aguardados-miperfil">
           <!-- boton de ver mas -->
-          <div class="div-ver-mas-miperfil">
-            <button class="boton-ver-mas-miperfil">Ver Más</button>
-          </div>
-          
-          <h3 class="seccion-title-amigos-miperfil">Amigos</h3>
-          <div class="seccion-amigos-miperfil">
-            <div class="foto-amigo-miperfil">
+          <div class="div-ver-mas-libro-miperfil">
+            <a href="#modal-libro-miperfil" class="boton-ver-mas-libro-miperfil">Ver Más</a>
+        </div>
+  
+          <h3 class="seccion-title-libro-miperfil">Libros Guardados</h3>
+          <div class="seccion-libro-miperfil">
+            <div class="foto-libro-miperfil">
               <img 
-                src="/Assetes/img/cp7.jpg" 
-                alt="Alex_㋛" 
-                class="img-amigos-miperfil"
+                src="/Assetes/img/23 Otoños Antes De Ti.jpg" 
+                alt="23 otoños antes de ti" 
+                class="img-libro-miperfil"
                 />
-              <p class="name-amigo-miperfil">Alex_㋛</p>
+              
             </div>
-            <div class="foto-amigo-miperfil">
+            <div class="foto-libro-miperfil">
               <img 
-                src="/Assetes/img/cp8.jpeg" 
-                alt="Emma_✩"
-                class="img-amigos-miperfil"
+                src="/Assetes/img/BAJO LA MISMA ESTRELLA - GREEN JOHN.jpeg" 
+                alt="bajo la misma estrella" 
+                class="img-libro-miperfil"
                 />
-              <p class="name-amigo-miperfil" >Emma_✩</p>
+              
             </div>
-            <div class="foto-amigo-miperfil">
+            <div class="foto-libro-miperfil">
               <img 
-                src="/Assetes/img/cp9.jpeg" 
-                alt="John_★" 
-                class="img-amigos-miperfil"
+                src="/Assetes/img/BRUJA BLANCA, LA ASESINO DE BRUJAS 1.jpg" 
+                alt="El asesino de brujas" 
+                class="img-libro-miperfil"
                 />
-              <p class="name-amigo-miperfil">John_★</p>
+           
             </div>
-            <div class="foto-amigo-miperfil">
+            <div class="foto-libro-miperfil">
               <img 
-                src="/Assetes/img/cp7.jpg" 
-                alt="Alex_㋛" 
-                class="img-amigos-miperfil"
+                src="/Assetes/img/Ciudades De Fuego.jpeg" 
+                alt="ciudades de fuego" 
+                class="img-libro-miperfil"
                 />
-              <p class="name-amigo-miperfil">Alex_㋛</p>
+              
             </div>
-            <div class="foto-amigo-miperfil">
+            <div class="foto-libro-miperfil">
               <img 
-                src="/Assetes/img/cp8.jpeg" 
-                alt="Emma_✩" 
-                class="img-amigos-miperfil"/>
-              <p class="name-amigo-miperfil">Emma_✩</p>
-            </div>
-            <div class="foto-amigo-miperfil">
-              <img 
-                src="/Assetes/img/cp9.jpeg" 
-                alt="John_★" 
-                class="img-amigos-miperfil"
+                src="/Assetes/img/Yo antes de ti.jpg" 
+                alt="yo anets de ti" 
+                class="img-libro-miperfil"
                 />
-              <p class="name-amigo-miperfil">John_★</p>
+             
+            </div>
+            <div class="foto-libro-miperfil">
+              <img 
+                src="/Assetes/img/Tres meses.jpeg" 
+                alt="Tres meses" 
+                class="img-libro-miperfil"
+                />
+              
             </div>
           </div>
         </div>
+
+        <!-- INICIO MODAL DE LOS LIBRIOS -->
+
+           <!-- Modal de Libros Guardados -->
+      <div id="modal-libro-miperfil" class="modal-overlay-libro-miperfil">
+          <div class="modal-content-libro-miperfil">
+              <div class="modal-header-libro-miperfil">
+                <a href="#" class="modal-close-libro-miperfil">&times;</a>
+                <h3 class="modal-title-libro-miperfil">Libros Guardados</h3>
+              </div>
+              <div class="modal-books-container-libro-miperfil">
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/23 Otoños Antes De Ti.jpg" 
+                          alt="23 otoños antes de ti" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title-libro-miperfil">23 otoños antes de ti</p>
+                  </div>
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/BAJO LA MISMA ESTRELLA - GREEN JOHN.jpeg" 
+                          alt="bajo la misma estrella" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title">Bajo la misma estrella</p>
+                  </div>
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/BRUJA BLANCA, LA ASESINO DE BRUJAS 1.jpg" 
+                          alt="El asesino de brujas" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title-libro-miperfil">Bruja blanca, el asesino de brujas</p>
+                  </div>
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/Ciudades De Fuego.jpeg" 
+                          alt="ciudades de fuego" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title-libro-miperfil">Ciudades de fuego</p>
+                  </div>
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/Yo antes de ti.jpg" 
+                          alt="yo antes de ti" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title-libro-miperfil">Yo antes de ti</p>
+                  </div>
+                  <div class="modal-book-item-libro-miperfil">
+                      <img 
+                          src="/Assetes/img/Tres meses.jpeg" 
+                          alt="Tres meses" 
+                          class="modal-book-img-libro-miperfil"
+                      />
+                      <p class="modal-book-title-libro-miperfil">Tres meses</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- FINAL DEL MODLA DE LOS LIBROS -->
+
+          <!-- Seccion de amigos -->
+          <div class="amigos-miperfil">
+            <!-- boton de ver mas -->
+            <div class="div-ver-mas-miperfil">
+              <a href="#modal-amigos-miperfil" class="boton-ver-mas-miperfil">Ver Más</a>
+            </div>
+            
+            <h3 class="seccion-title-amigos-miperfil">Amigos</h3>
+            <div class="seccion-amigos-miperfil">
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp7.jpg" 
+                  alt="Alex_㋛" 
+                  class="img-amigos-miperfil"
+                  />
+                <a href="#" class="name-amigo-miperfil">Alex_㋛</a>
+              </div>
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp8.jpeg" 
+                  alt="Emma_✩"
+                  class="img-amigos-miperfil"
+                  />
+                <p class="name-amigo-miperfil" >Emma_✩</p>
+              </div>
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp9.jpeg" 
+                  alt="John_★" 
+                  class="img-amigos-miperfil"
+                  />
+                <p class="name-amigo-miperfil">John_★</p>
+              </div>
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp7.jpg" 
+                  alt="Alex_㋛" 
+                  class="img-amigos-miperfil"
+                  />
+                <p class="name-amigo-miperfil">Alex_㋛</p>
+              </div>
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp8.jpeg" 
+                  alt="Emma_✩" 
+                  class="img-amigos-miperfil"/>
+                <p class="name-amigo-miperfil">Emma_✩</p>
+              </div>
+              <div class="foto-amigo-miperfil">
+                <img 
+                  src="/Assetes/img/cp9.jpeg" 
+                  alt="John_★" 
+                  class="img-amigos-miperfil"
+                  />
+                <p class="name-amigo-miperfil">John_★</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- modal de amigos -->
+
+
+          <!-- Modal 1 -->
+            <div id="modal-amigos-miperfil" class="modal-amigos-miperfil">
+              <div class="modal-content-amigos-miperfil">
+                <div class="modal-header-amigos-miperfil">
+                  <h2 class="modal-title-amigos-miperfil">Amigos</h2>
+                  <a href="#" class="modal-close-amigos-miperfil">&times;</a>
+                </div>
+                <div class="modal-amigos-container-amigos-miperfil">
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp7.jpg" alt="Alex_㋛">
+                    <p class="modal-name-amigo-amigos-miperfil">Alex_㋛</p>
+                  </div>
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp8.jpeg" alt="Emma_✩">
+                    <p class="modal-name-amigo-amigos-miperfil">Emma_✩</p>
+                  </div>
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp9.jpeg" alt="John_★">
+                    <a href="#" class="modal-name-amigo-amigos-miperfil">John_★</a>
+                  </div>
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp7.jpg" alt="Alex_㋛">
+                    <p class="modal-name-amigo-amigos-miperfil">Alex_㋛</p>
+                  </div>
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp8.jpeg" alt="Emma_✩">
+                    <p class="modal-name-amigo-amigos-miperfil">Emma_✩</p>
+                  </div>
+                  <div class="modal-amigos-amigos-miperfil">
+                    <img class="modal-img-amigo-amigos-miperfil" src="/Assetes/img/cp9.jpeg" alt="John_★">
+                    <p class="modal-name-amigo-amigos-miperfil">John_★</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- final de modal de amigos -->
+
 
             <!-- Comunidades -->
 
             <div class="comunidades-miperfil">
               <!-- boton de ver mas -->
               <div class="div-ver-mas-miperfil">
-                <button class="boton-ver-mas-miperfil">Ver Más</button>
+                <a href="#modal-comunidades-miperfil" class="boton-ver-mas-miperfil">Ver Más</a>
               </div>
       
               <h3 class="seccion-title-comunidades-miperfil">Comunidades</h3>
@@ -378,6 +695,43 @@
               </div>
             </div>
 
+            <!-- Inicio modal comunidades -->
+
+            <div id="modal-comunidades-miperfil" class="modal-comunidades-miperfil">
+              <div class="modal-content-comunidades-miperfil">
+                <div class="modal-header-comunidades-miperfil">
+                  <h2 class="modal-title-comunidades-miperfil">Comunidades</h2>
+                  <a href="#" class="modal-close-comunidades-miperfil">&times;</a>
+                </div>
+                <div class="modal-comunidades-container-comunidades-miperfil">
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c2.jpg" alt="Alex_㋛">
+                    <p class="modal-name-comunidad-comunidades-miperfil">Alex_㋛</p>
+                  </div>
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c3.jpg" alt="Emma_✩">
+                    <p class="modal-name-comunidad-comunidades-miperfil">Emma_✩</p>
+                  </div>
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c4.jpg" alt="John_★">
+                    <p class="modal-name-comunidad-comunidades-miperfil">John_★</p>
+                  </div>
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c5.jpg" alt="Alex_㋛">
+                    <p class="modal-name-comunidad-comunidades-miperfil">Alex_㋛</p>
+                  </div>
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c6.jpg" alt="Emma_✩">
+                    <p class="modal-name-comunidad-comunidades-miperfil">Emma_✩</p>
+                  </div>
+                  <div class="modal-comunidad-comunidades-miperfil">
+                    <img class="modal-img-comunidad-comunidades-miperfil" src="/Assetes/img/c7.jpg" alt="John_★">
+                    <p class="modal-name-comunidad-comunidades-miperfil">John_★</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- final de modal de comunidades -->
             
         <!-- medallas -->
 
