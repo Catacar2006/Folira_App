@@ -1,0 +1,50 @@
+.main-libros-general {
+    background-color: #fff;
+    margin-top: 115px;
+    max-height: 80%;
+    width: 81.6%;
+    max-width: 95%;
+    margin-left: 14.5%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border: 0.5px solid #50505e;
+}
+
+.libro-general-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px; /* Espacio de 10px entre los elementos */
+    justify-content: center;
+    margin: 30px 30px 70px 30px;
+}
+
+.libro-general-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 190px; /* Ancho fijo para todos los contenedores */
+    min-height: 350px; /* Altura mínima fija para todos los contenedores */
+    margin-top: 30px;
+}
+
+/* no poner cuidado a book_comunity */
+
+.libro-general-comunity{
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 240px;
+    border-radius: 20px; /* Ajusta según el estilo deseado */
+    border: 1px solid #22223B;
+}
+
+.title-libro-general {
+    color: black;
+    margin-top: 10%; /* Espacio entre la imagen y el título */
+    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    width: 100%; /* Ajusta el ancho para que coincida con el contenedor */
+    height: 50px; /* Altura fija para asegurar alineación */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Asegura que el texto esté centrado */
+}

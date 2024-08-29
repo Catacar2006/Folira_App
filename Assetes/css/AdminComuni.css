@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     height: 100vh;
-}
-.main {
+} 
+.main-gestion-comunidades {
     background-color: #fff;
     margin-top: 115px;
     max-height: 300%;
@@ -86,6 +86,15 @@ body {
     height: auto;
 }
 
+/*  */
+.img-top{
+    position: relative;
+    width: 100%;
+    height: 269px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -104,20 +113,24 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .card-content {
     display: flex;
     align-items: center;
 }
-.card img {
-    border-radius: 46%;
-    width: 159px;
-    height: 115px;
+
+.card-image {
+    border-radius: 50%;
+    border: 1px solid #503b31;
+    width: 160px;
+    height: 160px;
     margin-right: 30px;
     position: relative;
     top: 5px;
 }
 
-.card p {
+.card-text {
+    font-size: 20px;
     margin: 10px 0;
 }
 
@@ -125,12 +138,11 @@ body {
     display: flex;
     justify-content:center;
     position: relative;
-    right: 895px;
-    margin-top: 46px;
-    margin-bottom: -14px;
+    margin-top: -10px;
+    margin-bottom: 5px;
 }
 
-.actions button {
+.button-gestion-comuni{
     background: none;
     border: none;
     font-size: 24px;
@@ -139,8 +151,8 @@ body {
     margin-left: 40px;
 }
 
-.actions .approve {
-    background-image: url('../Icons/garrapata.png');
+/*  */
+.img-gestion-comuni {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -167,11 +179,4 @@ body {
     background-size: cover; /* Hace que la imagen cubra todo el área del contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-}
-.img-top{
-    position: relative;
-    width: 100%;
-    height: 269px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
 }
