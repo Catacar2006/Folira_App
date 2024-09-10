@@ -17,148 +17,31 @@
     <link rel="stylesheet" href="/Assetes/css/chat.css">
     <link rel="stylesheet" href="/Assetes/css/prueba.css">
     <link rel="stylesheet" href="/Assetes/css/detalleComunidad.css">
+    <link rel="stylesheet" href="/nav.css">
     
 </head>
 <body>
     
-            <!-- Barra Lateral -->
-<div class="container">
-    <div class="sidebar active">
-        <!-- flechita -->
-        <div class="menu-btn">
-            <i class="ph-bold ph-caret-left"></i>
-        </div>
-
-        <!-- foto -->
-        <div class="head">
-            <div class="user-img">
-                <img src="/Assetes/img/F_Usu.jpg" alt="Foto de usuario" />
-            </div>
-            <div class="user-details">
-                <p class="name">Jeonghan_4🫶🏼</p>
-            </div>
-        </div>
-
-        <!-- nav -->
-        <div class="nav">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-house"></i
-                        ><span class="text">Inicio</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-users"></i
-                        ><span class="text">Amigos</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-book"></i
-                        ><span class="text">Libros</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-quotes"></i
-                        ><span class="text">Autores</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-pencil-simple-line"></i
-                        ><span class="text">Reseñas</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-chat-teardrop-dots"></i
-                        ><span class="text">Comunidades</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                        ><i class="icon ph-bold ph-warning"></i
-                        ><span class="text">Denuncias</span></a
-                        >
-                </li>
-                </ul>
-            </div>
-            </div>
-
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="#"
-                ><i class="icon ph-bold ph-sign-out"></i
-                ><span class="text">Salir</span></a
-              >
-            </li>
-          </ul>
-        </div>
+  <nav>
+    <div class="logo">
+      <img class="icon-logo" src="/Assetes/img/folira-logo.png">
     </div>
-</div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <img src="/Assetes/img/folira-logo.png" alt="Logo" class="app-logo" />
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <div class="search-container">
-                  <input
-                    type="text"
-                    class="search-input"
-                    placeholder="Busca aquí ..."
-                  />
-                  <button class="search-button">
-                    <img
-                      src="/Assetes/img/lupa.png"
-                      alt="Buscar"
-                      class="search-icon"
-                    />
-                  </button>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
-                    src="/Assetes/img/notificaciones_icon.png"
-                    alt="Notificaciones"
-                    class="nav-icon"
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img
-                    src="/Assetes/img/ajustes_icon.png"
-                    alt="Ajustes"
-                    class="nav-icon"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+    <div class="options">
+      <a href="/Assetes/Usuario/FeedLibrosUsuario.html"> <img class="option-img" src="/Icon_nav/book-nav.svg"></a>
+      <a href="/Assetes/Usuario/FeedAutoresUsuario.html"><img class="option-img" src="/Icon_nav/autor_nav.svg"></a>
+      <a href="/Assetes/Usuario/reseñas.html"><img class="option-img" src="/Icon_nav/reseñas_nav.svg"></a>
+      <a href="/Assetes/Usuario/Comunidaades.html"><img class="option-img" src="/Icon_nav/comunidad-nav.svg"></a>
+      <a href="/Assetes/Usuario/reseñas.html"><img class="option-img" src="/Icon_nav/denuncia-nav.svg"></a>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="Buscar">
+      <img class="icon-lupa" src="/Icon_nav/lupa-nav.svg">
+    </div>
+    <div class="options-two">
+      <img class="option-two-nav" src="/Icon_nav/noti-nav.svg">
+      <a href="/Assetes/Usuario/miPerfilUsuario.html"><img class="option-two-nav" src="/Icon_nav/perfil-nav.svg"></a>
+    </div>
+  </nav>
     
 
     <!-- Main Content -->

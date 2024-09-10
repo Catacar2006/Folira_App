@@ -4,19 +4,20 @@
 
 .main-comunidad {
     background-color: #fff;
-    margin-top: 115px;
-    max-height: 80%;
-    width: 81.6%; 
+    margin: 115px auto 0; /* Centrado horizontal y margen superior */
+    width: 100%;
+    height: 197%; /* Ajusta la altura al contenido */
     max-width: 95%;
-    margin-left: 16%; 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 0.5px solid #50505e;
+    border: 0.5px solid #22223B;
+    padding: 20px;
+    overflow: visible; /* Asegura que el contenido no se oculte */
 }
 
 
 .section-comunidad{
-    padding: 30px;
+    padding: 10px;
     color: #503B31;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
@@ -29,17 +30,21 @@
     color: #000000;
     margin-left: 60px;
     font-size: 24.9px;
-    width: 90%;
+    width: 97%;
     margin-top: 2px;
-    margin-left: 50px;
+    margin-left: 28px;
     
 }
 
+
+
 .title-section-comunidad{
-    padding: 30px;
+    padding: 10px;
     color: #503B31;
-    margin: 30px 0 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 450;
     font-size: 35px;
 }
 
@@ -48,7 +53,7 @@
 .ver-mas{
     position: relative;
     left: 87%;
-    top: -7vh;
+    top: -2vh;
     font-size: 20px;
     border: 1px solid  #503B31;
     padding: 8px 15px 8px 15px;
@@ -162,15 +167,15 @@
 .container-comunidad {
     display: flex;
     flex-wrap: wrap;
-    gap: 110px; 
-    margin: 40px 0 30px 70px;
+    gap:50px; 
+    margin: 85px 0 120px 45px;
 }
 
 .img-comunidad {
     border-radius: 50%;
     border: 1px solid #000000;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     margin-top: -70px;
     margin-bottom: 20px;
@@ -188,15 +193,43 @@
 }
 
 .title-comunidad {
-    color: black;
+    color: rgb(0, 0, 0);
     margin-top: 10px; /* Espacio entre la imagen y el título */
-    font-size: 20px; /* Ajusta el tamaño del texto según tus necesidades */
+    font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
     width: 100%; /* Ajusta el ancho para que coincida con el contenedor */
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 200;
     text-align: center; /* Asegura que el texto esté centrado */
 }
+
+/* TUS COMUNIDADES FEED */
+
+.title-tus-comunidad{
+    padding: 10px;
+    margin: -60px 0 0 20px ;
+    color: #503B31;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+    font-size: 35px;
+}
+
+
+.tusComunidadesFeed {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px; 
+    margin: 85px 0 120px 45px;
+}
+
+
+
+
+
+
+
+
 
 /* segundo modal */
 

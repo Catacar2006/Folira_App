@@ -4,14 +4,15 @@
 
 .main-libros {
     background-color: #fff;
-    margin-top: 115px;
-    max-height: 80%;
-    width: 81.6%;
+    margin: 115px auto 0; /* Centrado horizontal y margen superior */
+    width: 100%;
+    height: 199%; /* Ajusta la altura al contenido */
     max-width: 95%;
-    margin-left: 14.5%; 
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-    border: 0.5px solid #50505e;
+    border-top-right-radius: 20px;
+    border: 0.5px solid #22223B;
+    padding: 20px;
+    overflow: visible; /* Asegura que el contenido no se oculte */
 }
  
 .title-libro{

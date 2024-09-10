@@ -3,16 +3,17 @@
 
 .main-ficha-libro {
     background-color: #fff;
-    margin-top: 115px;
-    width: 75%;
+    margin: 115px auto 0; /* Centrado horizontal y margen superior */
+    width: 100%;
+    height: 187%; /* Ajusta la altura al contenido */
     max-width: 95%;
-    margin-left: 16%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border: 0.5px solid #22223B;
-    padding: 20px; 
-    box-sizing: border-box; 
+    padding: 20px;
+    overflow: visible; /* Asegura que el contenido no se oculte */
 }
+
 
 .libro-container {
     padding: 20px;
@@ -68,7 +69,7 @@
 /* selecto biblioteca */
 .ficha-libro-locations {
     margin-bottom: 20px; 
-    color: #503b31; 
+    color: rgb(79, 58, 48); 
 }
 
 .text-location-libro {
